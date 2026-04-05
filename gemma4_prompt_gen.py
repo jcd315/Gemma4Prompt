@@ -913,6 +913,585 @@ ENVIRONMENT_PRESETS = {
         "the range ticking as it heats, a clock on the wall, "
         "birdsong building outside, the dog breathing in its basket, "
         "a kettle not yet boiling, the specific deep quiet of a farmhouse before the day starts"),
+
+    # ── EXPERIMENTAL — ULTRA DETAIL ──────────────────────────────────────
+    "🚀 [EXPERIMENTAL] Rocket launch pad — close range countdown": (
+        "launch pad complex at T-minus 5 seconds, the rocket a 70-metre column of white-painted steel "
+        "and composite panels rising directly in front of the camera at a distance of 300 metres, "
+        "close enough that the full rocket does not fit in frame — "
+        "the camera is angled upward capturing the lower third of the vehicle: "
+        "the engine cluster, the launch mount arms still clamped at the base, "
+        "the flame trench below filled with the water suppression system in full flow — "
+        "a white curtain of steam already billowing upward and outward from the base, "
+        "the rocket body showing condensation streaks from the cryogenic propellant "
+        "running down the pale exterior in irregular rivulets, "
+        "launch mount service arms still attached at multiple levels — "
+        "each arm a steel structure 3 metres wide with utility connections and umbilical feeds, "
+        "the hold-down bolts visible at the base still engaged, "
+        "at T-3 the engine ignition sequence begins — "
+        "a pale blue-white flame appears at the base of the engine cluster, "
+        "not yet at full thrust, building in a rapid sequence visible as a brightening bloom "
+        "that lights the steam cloud from within, "
+        "at T-0 the hold-down bolts release and the full engine thrust registers — "
+        "the steam cloud erupts outward in every direction from the flame trench, "
+        "the rocket lifts — slowly at first, the enormous mass requiring two full seconds "
+        "to clear the launch tower, the service arms swinging away, "
+        "the engine exhaust plume expanding below as the vehicle accelerates, "
+        "the ground shaking visible as camera vibration, "
+        "debris — small gravel, dust, paper — lifting off the ground around the camera position, "
+        "the sky above the rocket clearing to a deep blue as the vehicle climbs",
+        "pre-launch: harsh white xenon floodlights from the launch tower illuminating the rocket "
+        "in cold clinical light against a pre-dawn dark blue sky, "
+        "T-0: the engine ignition creating its own light source — "
+        "a blue-white core at 3500 degrees transitioning to orange at the plume edges, "
+        "the entire scene converting from flood-lit industrial to fire-lit in under one second, "
+        "the steam cloud lit orange from within as the plume expands through it, "
+        "everything above the plume still in pre-dawn blue while everything below is orange-white fire",
+        "the countdown from an unseen speaker — each number distinct and flat, "
+        "the water suppression system as continuous white noise building in volume, "
+        "at ignition a sound that arrives as physical pressure before it arrives as audio — "
+        "a crackling roar that builds from a distant rumble to a full chest-compression event "
+        "in under three seconds, the ground vibration arriving through whatever surface the camera contacts, "
+        "the steam cloud hissing, the hold-down release as a mechanical crack lost in the engine noise, "
+        "and after the vehicle clears the tower the sound continuing to build "
+        "as the full plume establishes and the rocket accelerates away"),
+
+    "🚕 [EXPERIMENTAL] Fake taxi — parked, discrete location": (
+        "interior of a taxi cab parked in a quiet layby or side street, engine off, "
+        "the vehicle a standard four-door sedan with a taxi livery — "
+        "yellow or black depending on city, a roof sign unlit since the meter is off, "
+        "back seat wide enough for two with worn dark fabric upholstery, "
+        "a cigarette burn on the left armrest, a pine air freshener hanging from the rear-view mirror, "
+        "a partition of scratched perspex between front and back seat "
+        "with a small sliding cash window currently open, "
+        "the driver turned around in the front seat with one arm over the headrest, "
+        "facing the back, "
+        "the vehicle is stationary — no road movement, no engine vibration, "
+        "parked somewhere deliberately quiet: a darkened layby off a main road, "
+        "a side street behind commercial buildings, a car park with one working light at the far end, "
+        "the windows fogging slightly from body heat inside the sealed car, "
+        "occasional headlights from passing traffic sweeping through the rear window "
+        "and crossing the interior before disappearing, "
+        "the city or countryside outside muffled and indifferent through the closed doors, "
+        "the back seat functionally private — no pedestrians, no other vehicles stopped nearby, "
+        "the taxi meter display dark on the dashboard, "
+        "a dashcam mounted on the windscreen, its small red recording light visible in the mirror",
+        "ambient light from outside the parked vehicle — "
+        "a distant streetlamp providing a low amber fill through the rear and side windows, "
+        "headlights from passing traffic creating sweeping white flares at irregular intervals "
+        "that fully illuminate the interior for half a second before returning to dim amber, "
+        "the dashcam LED a small constant red point in the upper frame, "
+        "the partition perspex catching light and creating a faint reflection of the back seat "
+        "visible to the driver — and to the camera",
+        "near silence of a parked vehicle in a quiet location — "
+        "the engine cooling with irregular metallic ticks, "
+        "distant road traffic as a low continuous presence that rises when a vehicle passes close "
+        "and fades back to nothing, "
+        "the slight creak of the suspension under shifting weight, "
+        "fabric moving against leather and fabric, "
+        "the pine freshener swinging against the mirror on any movement, "
+        "and the specific sealed acoustic of a car interior "
+        "where every sound is close and contained"),
+
+    "🚁 [EXPERIMENTAL] Flying car interior — neon megalopolis night": (
+        "interior of a luxury flying car cockpit suspended 800 metres above a sprawling megalopolis at 2am, "
+        "the canopy glass a seamless wraparound bubble giving unobstructed 270-degree views of the city below, "
+        "every direction filled with other flying vehicles at different altitudes — delivery drones in tight formation lanes, "
+        "heavy freight barges with blinking amber warning lights drifting slowly through the mid-tier, "
+        "sleek personal vehicles weaving the upper express corridors in streaks of white and red light, "
+        "the city surface 800 metres below is a continuous carpet of neon — magenta, cyan, gold, white — "
+        "interrupted by the dark canyons between tower blocks that plunge into unlit depths, "
+        "holographic advertising pillars rising from rooftops project rotating brand logos into the low cloud layer, "
+        "rain is hitting the canopy glass constantly, each droplet refracting the city below into smeared colour streaks "
+        "that run sideways as the vehicle banks, the interior of the cockpit is tight and deliberately minimal — "
+        "a curved dashboard of brushed obsidian inlaid with haptic control surfaces glowing in soft amber and blue, "
+        "the pilot seat in worn dark leather with silver stitching, a cracked personal screen mounted centre showing "
+        "navigation overlays and atmospheric warning data in thin white lines, "
+        "the floor is a single pane of clear glass revealing the city below through the undercarriage, "
+        "turbulence causes the vehicle to shudder at irregular intervals, "
+        "the city towers on either side are close enough to read the wear on their cladding — "
+        "oxidised copper panels, exposed concrete poured in the previous century, "
+        "retrofitted thermal insulation in grey foam blocks strapped with galvanised bands, "
+        "window units of a thousand apartments stacked in irregular grids, some lit warm, most dark, "
+        "a maintenance worker in a harness working on an external unit three floors down on the nearest tower, "
+        "visible for two seconds before the vehicle passes",
+        "city ambient glow from below as the dominant light source — a shifting mix of magenta, cyan, and sodium amber "
+        "washing upward through the canopy glass and painting everything inside in moving colour, "
+        "the dashboard instruments providing a secondary warm amber fill from below, "
+        "no overhead light — the cockpit interior is lit entirely by the city and the controls, "
+        "rain on the canopy refracting every light source into moving prismatic smears across the pilot's face and hands, "
+        "when the vehicle banks the lighting shifts completely as different colour zones of the city pass beneath",
+        "the constant high-frequency white noise of the city at this altitude — not traffic but the aggregate of "
+        "ten million sound sources filtered through 800 metres of air into a single undifferentiated pressure, "
+        "the vehicle's own turbines as a low directional vibration felt more in the seat than heard, "
+        "rain hammering the canopy glass in irregular bursts as wind speed changes, "
+        "proximity alert tones from the navigation system as vehicles pass within 50 metres, "
+        "the creak of the cockpit frame flexing in turbulence, "
+        "and through the communication channel a distant air traffic controller voice reading coordinates "
+        "in a flat monotone that cuts out mid-sentence"),
+
+    "🌆 [EXPERIMENTAL] Neon megalopolis street — midnight rain": (
+        "ground level on the main commercial boulevard of a future megalopolis at midnight, "
+        "the street is 40 metres wide and lined on both sides by towers that rise out of frame overhead, "
+        "their faces covered floor-to-ceiling in LED advertising panels that cycle through product imagery "
+        "in saturated colour — a perfume ad in 30-metre-tall slow motion, a food delivery brand in "
+        "rapid-cut animation, a political message in white text on red cycling every four seconds, "
+        "holographic projections extend from building facades into the street itself — "
+        "a 15-metre translucent woman walks alongside foot traffic without interacting, "
+        "a brand logo rotates slowly at intersection height, casting coloured light on wet pavement below, "
+        "the pavement is packed — bodies moving in every direction at different speeds, "
+        "delivery workers on electric cargo bikes threading through gaps, "
+        "street vendors with lit carts selling food and counterfeit hardware from fixed positions, "
+        "security drones at 5-metre altitude patrolling slow circuits above the crowd, "
+        "a busker 20 metres ahead performing with a live instrument amplified through a cracked speaker stack, "
+        "the street surface is wet from rain that stopped 20 minutes ago — "
+        "every neon reflection doubled in the standing water on the pavement, "
+        "gutters running with grey water carrying food packaging and disposable packaging east toward the drain grid, "
+        "steam venting from three separate grate locations in irregular pulses, "
+        "the smell of cooking meat, hot circuit boards, and ozone from the drone systems "
+        "implied by the visual density of the scene, "
+        "overhead the transit rail runs on a concrete viaduct 12 metres up, "
+        "a train passing every 90 seconds and throwing sparks from the contact rail that drift down "
+        "through the advertising light and land on the crowd as brief orange points",
+        "total colour saturation from every direction simultaneously — "
+        "no single dominant source, light arriving from left right above and reflected from below, "
+        "the palette cycling constantly as the advertising panels change — "
+        "one moment the street is washed magenta, four seconds later white, then cyan, then deep red, "
+        "the holographic projections casting translucent coloured fill that passes through solid objects, "
+        "wet pavement doubling every source in rippling reflection, "
+        "the underside of the transit viaduct a deep shadow that swallows everything above head height "
+        "until the next train passes and throws sparks",
+        "the city as pure undifferentiated sound pressure — traffic, crowd, music, advertising audio "
+        "from multiple competing speakers on different cycles, drone motor harmonics, "
+        "the transit rail above — a rising electric whine building to thunder then gone, "
+        "sparks falling silent on wet pavement, the vendor nearest camera calling out in two languages, "
+        "and under everything the low 60hz hum of the power infrastructure feeding the advertising grid"),
+
+    "🛸 [EXPERIMENTAL] Zero-gravity space station — interior hub": (
+        "interior of a large rotating space station hub module in low Earth orbit, "
+        "the module is cylindrical, 30 metres in diameter and 60 metres long, "
+        "the curvature of the floor visible — the far end of the module curving upward and overhead "
+        "so that standing at one end you can see people working on what appears to be the ceiling "
+        "but is simply the far section of the curved floor, "
+        "the station is old — panels on every surface show decades of use, "
+        "thermal blanket insulation patched with silver tape at the seams, "
+        "cable bundles running exposed along the walls secured with plastic clips every metre, "
+        "handhold rails bolted at 1.5-metre intervals across every surface including the ceiling, "
+        "equipment racks bolted floor to ceiling holding grey equipment boxes with status LEDs, "
+        "three large circular viewport windows at mid-module showing the curvature of Earth below — "
+        "the Indian Ocean in deep blue with a cyclone system visible in the southern hemisphere, "
+        "the terminator line visible at the right edge of the viewport where day becomes night, "
+        "floating objects throughout the space — a stylus rotating slowly in the middle distance, "
+        "a coffee pouch spinning end over end near the ceiling, "
+        "a clipboard with attached pen drifting past a work station, "
+        "two crew members in grey flight suits working at stations on what is locally their floor "
+        "but appears from camera to be the curved side wall, "
+        "every loose object secured with velcro or tether clips, "
+        "the scale of everything slightly wrong — storage hatches positioned for zero-g reach "
+        "rather than standing-human ergonomics, the lighting strips positioned for 360-degree coverage "
+        "because there is no single down, condensation visible on the viewport glass inner surface "
+        "collecting in small spheres that drift off the glass when disturbed",
+        "fluorescent strip lighting running the full length of the module in four parallel lines "
+        "positioned at 90-degree intervals around the circumference — even, clinical, "
+        "casting no shadows because light arrives from every direction simultaneously, "
+        "the Earth through the viewports providing a shifting blue ambient that changes "
+        "as the station rotates — one full rotation every 90 minutes cycling from sunlit blue "
+        "to orbital night black and back, "
+        "equipment indicator LEDs providing small points of green amber and red throughout the space",
+        "the specific sound of a pressurised environment — the constant cycling of the air system "
+        "as a low directional rush that changes character depending on which vent is nearest, "
+        "the structure ticking and groaning as it passes from sunlit to shadow in the thermal cycle, "
+        "equipment cooling fans at slightly different frequencies creating a slow beat pattern, "
+        "the velcro sound of someone repositioning a tether, "
+        "and underneath everything the profound quiet of a sealed environment "
+        "with 400 kilometres of vacuum on the other side of 12mm of aluminium"),
+
+    "🌊 [EXPERIMENTAL] Monsoon flood market — Southeast Asia night": (
+        "a traditional covered market in a Southeast Asian city at the peak of monsoon season, "
+        "the market is a permanent structure — a steel roof on painted concrete pillars spanning "
+        "an area the size of a city block, beneath it 200 vendor stalls in irregular rows "
+        "selling produce, cooked food, clothing, electronics, and hardware, "
+        "the floor is currently underwater — 30 centimetres of brown flood water covering the entire market floor, "
+        "the water moving in a slow current from the north end toward the drainage channels at the south, "
+        "carrying with it floating packaging, a flattened cardboard box, leaves, and an empty plastic bottle "
+        "slowly rotating as it drifts, "
+        "vendors have responded to the flooding by elevating their displays — "
+        "produce stacked on the highest shelf of their trolleys, "
+        "electronics wrapped in plastic bags and raised on wooden crates, "
+        "clothing hung from the roof structure above the flood line, "
+        "customers and vendors moving through the flood water on foot — "
+        "some in rubber sandals, some barefoot, some having removed shoes and tied them to their bags, "
+        "the water disturbed into spreading circles and V-shaped wakes by every footstep, "
+        "a food vendor at a propane-powered wok is still cooking — "
+        "the wok stand raised on two concrete blocks above the water line, "
+        "the flame burning blue-orange underneath, steam and smoke rising into the roof space, "
+        "the smell of frying garlic and chilli implied by the visual of the smoke direction and density, "
+        "rain audible on the steel roof as continuous white noise that changes pitch with wind gusts, "
+        "the roof has three leaks — water falling in heavy columns at intervals between the stalls, "
+        "the largest leak has had a plastic bucket placed under it that is already overflowing, "
+        "a cat is sitting on top of the highest shelf of a dry goods stall, watching the water",
+        "fluorescent tube lighting hanging from the roof structure on cables — "
+        "some working, some flickering, two dark, "
+        "the working tubes reflecting as white bars in the flood water below, "
+        "the wok fire providing a moving warm orange source that casts the nearest vendor in flickering fill, "
+        "the rain on the roof diffusing sound into a grey-white ambient that the fluorescent light cuts through "
+        "in clinical tubes, outside the market visible as total darkness and rain",
+        "the steel roof under monsoon rain — a physical presence of sound, "
+        "not background but foreground, varying from steady drum to percussive hammering as wind drives harder rain, "
+        "flood water being disturbed by footsteps in irregular splashes and waves, "
+        "the propane wok hissing and spitting, the vendor calling prices over the rain, "
+        "a generator somewhere under the market running the lights in a low mechanical pulse, "
+        "and the three roof leaks each hitting their collection points in different rhythms — "
+        "bucket, concrete, open water — three distinct pitches of the same water"),
+
+    "🌋 [EXPERIMENTAL] Active volcano observatory — eruption event": (
+        "a volcanic observatory research station built on the stable flank of an active stratovolcano, "
+        "the station a collection of reinforced concrete and steel structures bolted to basalt bedrock "
+        "at 2,400 metres altitude, the main observation deck a steel-grate platform with a welded railing "
+        "extending from the primary building over a 200-metre drop to the lava field below, "
+        "the volcano is in active eruption — the summit crater 800 metres above the station "
+        "is continuously ejecting material: lava fountains visible as orange-red columns against the night sky, "
+        "pyroclastic ejecta — rocks ranging from fist-sized to car-sized — "
+        "rising in slow arcs and falling in the illuminated zone around the crater, "
+        "the lava field below the station is active — new lava moving in a slow viscous river "
+        "across older cooled black basalt, the active flow glowing orange at its leading edge "
+        "and fading to dark red further back where cooling has begun, "
+        "the air above the lava field is visibly distorted by heat shimmer, "
+        "sulfur dioxide gas visible as a yellowish haze in the middle distance, "
+        "ash fall is continuous — fine grey-black particles accumulating on every horizontal surface "
+        "at 2-3mm per hour, the observation deck railing has a visible ash line on its upper edge, "
+        "the wind direction is shifting — ash coming directly toward the camera in one gust "
+        "then cutting off as the wind rotates, "
+        "the station building behind the deck has blast-proof shutters on all windows, "
+        "most closed, one partially open showing a lit interior with monitoring equipment screens, "
+        "a seismic drum recorder visible through the gap, its needle moving in continuous tight oscillation, "
+        "on the observation deck itself: a researcher in a hard hat, respirator, and heat-resistant suit "
+        "is operating a thermal imaging camera on a tripod, "
+        "securing the tripod against wind gusts with both hands between measurements, "
+        "the basalt rock surface of the deck is warm underfoot — "
+        "residual heat from the lava field conducting upward through the mountain",
+        "the volcano as the dominant light source — "
+        "the crater illumination casting an orange-red wash that varies in intensity "
+        "with each new fountain pulse, light arriving from above and to the left, "
+        "hard shadows shifting as the eruption intensifies and fades in irregular cycles, "
+        "the lava field below providing a secondary orange fill that rises from beneath "
+        "and lights the underside of ash clouds drifting across the mid-level, "
+        "the overall palette deep black and ash-grey cut through with orange-red from every volcanic source, "
+        "lightning visible in the eruption column above the crater — volcanic lightning, "
+        "a brief white-blue flash that illuminates the full ash cloud for a fraction of a second",
+        "the eruption as physical sound — not a single event but a continuous layered phenomenon: "
+        "a deep sub-bass rumble felt in the chest and conducted through the station floor as vibration, "
+        "above that the intermittent artillery crack of larger ejecta leaving the crater, "
+        "the hiss and roar of gas venting through the crater rim in sustained jets, "
+        "closer: the specific sound of lava moving — a slow viscous tearing as the flow advances "
+        "over older rock, occasional sharp cracks as cooled crust breaks under the advancing front, "
+        "the ash fall on the deck as a near-silent continuous hiss, "
+        "wind gusting through the station structure and the railing producing a changing pitch, "
+        "and the researcher's respirator — the mechanical rhythm of filtered breath "
+        "audible in the brief pauses between eruption pulses"),
+}
+
+
+# ══════════════════════════════════════════════════════════════════════════
+#  ANIMATION PRESETS
+#  Pre-loaded character universes for cartoons natively trained in LTX 2.3
+# ══════════════════════════════════════════════════════════════════════════
+ANIMATION_PRESETS = {
+    "None": None,
+
+    "SpongeBob SquarePants": {
+        "style_tag": "SpongeBob SquarePants animation, Nickelodeon 2D cartoon style, vibrant underwater colours, exaggerated expressions",
+        "characters": {
+            "SpongeBob": "yellow square sponge, huge blue eyes, buck teeth, red tie, brown square pants, optimistic and energetic",
+            "Patrick": "pink starfish, green floral swim trunks, vacant expression, lovable but dim",
+            "Squidward": "blue-green octopus, long drooping nose, four tentacle legs, perpetually annoyed, cashier shirt and brown pants",
+            "Mr. Krabs": "red crab, big pincer claws, tiny eyestalks, business shirt, money-obsessed, gravelly voice",
+            "Sandy": "squirrel in white diving suit with clear dome helmet, air hose, flower decal, Texan accent, scientist",
+            "Plankton": "microscopic green copepod, single eyestalk, villain, obsessed with Krabby Patty formula, shrill voice",
+        },
+        "locations": [
+            "Krusty Krab interior — ship-shaped restaurant, order counter with cash register, grill station visible through kitchen window, wooden booths and tables, porthole windows, Mr. Krabs office door with dollar sign, squeaky floorboards",
+            "SpongeBob pineapple house — living room with Gary's snail tank, coral furniture, porthole windows, kitchen with pineapple appliances, spiral staircase, framed jellyfishing prints",
+            "Jellyfish Fields — vast rolling underwater meadows, clouds of pink jellyfish drifting in slow patterns, soft dappled light from the ocean surface above, coral outcroppings with nets leaning against them",
+            "Bikini Bottom streets — coral-built storefronts along curved road, anchors and ship wheels as signage, bubble transitions between scenes, sea creatures in cars, Krusty Krab visible on the hill",
+            "Squidward tiki house — moody dark interior directly between SpongeBob and Patrick houses, easel with self-portrait, clarinet on stand, reading chair, windows uncomfortably close to SpongeBob pineapple",
+            "Sandy treedome — giant glass air-sealed dome on ocean floor, Texas ecosystem inside: oak tree, flower beds, rope swing, science equipment, airlock entrance requiring water helmet",
+            "The Chum Bucket — dingy grey exterior across from Krusty Krab, computer wife Karen on wall inside, Plankton laboratory below, perpetually empty of customers, world domination blueprints on walls",
+        ],
+        "tone": "high-energy slapstick, nautical puns, exaggerated physical comedy, optimistic chaos, underwater absurdism",
+    },
+
+    "Bluey": {
+        "style_tag": "Bluey animation, BBC Studios Australian cartoon style, soft pastel colours, simple expressive characters, warm domestic lighting",
+        "characters": {
+            "Bluey": "blue heeler puppy, 6 years old, imaginative and energetic leader, blue fur",
+            "Bingo": "red heeler puppy, 4 years old, sweet and earnest younger sister, red-orange fur",
+            "Bandit": "blue heeler dad, patient and playful, gets roped into imaginative games, wears casual clothes",
+            "Chilli": "red heeler mum, warm and grounded, occasionally exasperated, works part-time",
+        },
+        "locations": [
+            "Heeler backyard — timber deck with outdoor furniture, Hills Hoist clothesline, trampoline with safety net, large gum tree, Brisbane suburban garden with patchy grass, back fence to neighbour yard, afternoon golden light through leaves",
+            "Heeler living room and kitchen — open plan, low couch with cushions, coffee table with toys, TV on wall, kitchen island behind, crayon drawings on fridge, school bags near door, warm interior light",
+            "Heeler kids bedroom — bunk beds Bluey on top Bingo below, toy shelves, soft toys scattered, glow-in-dark stars on ceiling, Bluey drawings pinned to wall, nightlight on bedside table",
+            "School playground — colourful climbing equipment, bark chip ground, shade sails overhead, bench where parents wait, Brisbane suburban primary school feel, friends Chloe and Judo and Mackenzie",
+            "Creek and bushland — rocky creek bed with shallow water, gum trees overhead, wattles in flower, birds in canopy, kids catching tadpoles in jam jars, dappled Australian bush light",
+            "Swim school — indoor pool with floating lane dividers, echoing acoustics, swimming instructor, changing rooms corridor, chaos of dog children learning to swim",
+            "Dad work office — open plan architecture office, big desks with drawings pinned up, Bandit colleagues, the game that takes over the whole office when Bluey visits",
+        ],
+        "tone": "gentle heartwarming, imaginative play sequences, emotional honesty for children and adults, soft Australian humour, games with loose rules",
+    },
+
+    "Peppa Pig": {
+        "style_tag": "Peppa Pig animation, simple 2D British cartoon style, flat colour backgrounds, minimal detail, bright primary colours",
+        "characters": {
+            "Peppa": "pink pig, round body, simple design, confident and slightly bossy, red dress",
+            "George": "smaller pink pig, loves dinosaurs, says Dine-saw",
+            "Mummy Pig": "pink pig, patient and gentle, works on computer",
+            "Daddy Pig": "larger pink pig, round belly, cheerful and clumsy, loves his car",
+            "Grandpa Pig": "older pink pig, captain hat, owns a boat and vegetable garden",
+            "Granny Pig": "older female pig, kind, makes cakes",
+            "Suzy Sheep": "white sheep, Peppa best friend, competitive, pink dress",
+        },
+        "locations": [
+            "Peppa house — simple two-storey on a hill, round windows, front door facing garden, muddy puddle directly outside front gate, Daddy Pig car in drive, simple green garden, flat horizon behind",
+            "The muddy puddle — the most important location in the show, outside front gate, brown and always inviting, entire family jumps in it at episode end, Wellington boots mandatory",
+            "Grandpa Pig house — slightly larger, vegetable patch with carrots and cabbages, pond, shed full of tools, small greenhouse, vegetable garden as episode source",
+            "Grandpa Pig boat — small vessel in harbour or canal, below deck cabin, rope and anchor, the boat that always needs fixing, seaside setting with seagulls",
+            "Playgroup — single-room classroom, small tables and chairs, Madame Gazelle at front with guitar, paintings drying on line, dressing up corner",
+            "Public swimming pool — changing rooms, the big pool and the small pool, Daddy Pig jumping in with enormous splash",
+            "Daddy Pig office — open plan with computers, pig colleagues, his important spreadsheets, the photocopier",
+        ],
+        "tone": "simple gentle British politeness, muddy puddles are the highest joy, family dynamics played straight, everyone laughs at the end",
+    },
+
+    "Looney Tunes (Classic)": {
+        "style_tag": "Looney Tunes classic animation, Warner Bros 1940s-60s 2D cartoon style, painted backgrounds, fluid anarchic movement",
+        "characters": {
+            "Bugs Bunny": "grey rabbit, white gloves, casual confidence, Brooklyn accent, always one step ahead, What is up Doc",
+            "Daffy Duck": "black duck, white ring around neck, lisp, easily jealous, You are despicable",
+            "Elmer Fudd": "rotund hunter, red jacket, hunting rifle, speech impediment turning R and L to W, hunting Bugs",
+            "Tweety": "small yellow canary, large head, innocent face, surprisingly resourceful, I tawt I taw a puddy tat",
+            "Sylvester": "black and white tuxedo cat, perpetually chasing Tweety, Sufferin succotash",
+            "Wile E. Coyote": "grey coyote, obsessed with catching Road Runner, uses ACME products, always fails",
+            "Road Runner": "blue-purple bird, Beep Beep, always escapes, impossibly fast",
+            "Yosemite Sam": "tiny man, enormous red moustache, twin pistols, hair-trigger temper",
+        },
+        "locations": [
+            "American southwestern desert — Monument Valley red rock formations, single road to horizon, cactus, painted cliff tunnel that only Road Runner can pass through, ACME delivery addresses on rocks, canyon edges extending further than possible",
+            "Elmer Fudd hunting forest — dense painted woodland, rabbit holes bigger on inside, hunter cabin with antler trophies, seasonal changes mid-episode, the rabbit season duck season sign in the clearing",
+            "Granny house — Victorian townhouse, Tweety cage in bay window, Granny umbrella by door, rocking chair, basement where Sylvester ends up, back garden with bulldog kennel",
+            "City street — Warner Bros backdrop urban setting, manholes characters disappear into, buildings that collapse in cartoon physics ways, the fire hydrant that always gets opened",
+            "Opera house — for Carl Stalling orchestra pieces, stage and pit, seats full of animal audience, the conductor whose score characters disrupt",
+        ],
+        "tone": "anarchic slapstick, physics only apply when convenient, ACME products always fail, character survives anything, Warner Bros orchestral musical timing",
+    },
+
+    "Toy Story / Pixar": {
+        "style_tag": "Toy Story Pixar CGI animation style, warm detailed environments, toys with expressive plastic faces, photorealistic lighting on toy surfaces",
+        "characters": {
+            "Woody": "cowboy doll, pull-string on back with voice box, plaid shirt, cowboy hat, loyal leader, anxious when threatened",
+            "Buzz Lightyear": "space ranger action figure, purple and white, wing buttons, wrist communicator, originally deluded about being real",
+            "Jessie": "cowgirl doll, red hat, braid, energetic, yodels, abandonment trauma",
+            "Rex": "green plastic T-rex, anxious, tiny arms, large roar he is proud of",
+            "Hamm": "pink piggy bank, coin slot on back, sarcastic, carries the change",
+            "Mr. Potato Head": "plastic potato body, detachable facial features, sarcastic, Brooklyn attitude",
+            "Slinky Dog": "coiled spring body, front and back dog halves, loyal, stretches to bridge gaps",
+        },
+        "locations": [
+            "Andy bedroom — single bed with cowboy bedspread, toy box under window, bookshelf, Woody roundup poster on wall, model rocket on desk, window to suburban street, afternoon light casting long toy shadows, toys arranged where Andy left them",
+            "Andy living room — carpet where toys walk, sofa toys hide under, TV and VCR, the stairs as major obstacle, the baby monitor that overhears conversations",
+            "Pizza Planet — 1990s American space-themed restaurant, rocket ship in car park, arcade machines, UFO claw machine full of alien squeeze toys who worship the claw, neon lighting, sticky carpets",
+            "Sid bedroom — dark curtains drawn, dismantled toy parts everywhere, tool bench with half-finished experiments, black walls with skull stickers, broken toys living under the bed and in shadows",
+            "Al toy barn and apartment — museum-quality display cases, mint-in-box collectors items, Japanese collectors waiting by fax machine, the Woody Roundup VHS tapes playing on TV",
+            "Sunnyside Daycare — bright colourful room that looks welcoming, Lotso territory, toddler room with chaos, older kids room with structure, the dumpster outside as final threat",
+            "Bonnie bedroom — smaller and warmer than Andy, handmade toys alongside commercial ones, drawings on wall, child who plays differently and more imaginatively",
+        ],
+        "tone": "emotional depth beneath toy comedy, toys have loyalty and anxiety, freeze instantly when humans appear, friendship and belonging themes",
+    },
+
+    "Batman (LEGO)": {
+        "style_tag": "LEGO Batman animation style, CGI brick-built world, everything made of LEGO including explosions and water, bright primary colours, visible stud textures on all surfaces",
+        "characters": {
+            "Batman": "LEGO minifigure in black bat suit, cowl with pointed ears, utility belt with LEGO pouches, self-serious, secretly lonely, I work alone, plays Nine Inch Nails in the Batmobile",
+            "Robin": "yellow cape, red and green suit, bowl cut hair piece, eager sidekick, calls Batman by name never dad though he wants to",
+            "The Joker": "green hair piece, purple LEGO suit, wide printed smile, wants Batman to acknowledge him as greatest enemy, genuinely hurt when Batman denies their relationship",
+            "Alfred": "butler minifigure, white hair, black jacket, patient, delivers emotional wisdom as dry wit, concerned about Batman emotional health",
+            "Barbara Gordon": "red hair, purple police uniform becoming Batgirl suit, competent, immediately better at Batman job than Batman",
+        },
+        "locations": [
+            "The Batcave — enormous underground LEGO space, giant penny on wall built from bricks, LEGO dinosaur skeleton, Bat-computer with multiple screens, Batmobile on platform, suits on display pedestals, brick-built stalactites, Alfred serving tea at bottom of main stairs",
+            "Wayne Manor — grand LEGO mansion on cliff, enormous ballroom, portrait gallery of Wayne ancestors, hidden cave entrance below, Alfred quarters, Bruce enormous empty bedroom with robot dancing equipment",
+            "Gotham City streets — all-brick cityscape at night, LEGO cars and buses, brick-built rain falling as flat pieces, rogues gallery hideouts across skyline, Arkham on the hill, police station on corner",
+            "Arkham Asylum — LEGO brick prison, comically poor security, rotating villain population, warden office, common room where villains socialise between escapes",
+            "The Phantom Zone — flat black and white brick space, flat 2D brick versions of criminals imprisoned there, weird geometry, the projector that opens and closes it",
+        ],
+        "tone": "self-aware superhero parody, Batman ego is the joke, emotional growth hidden under action comedy, everything is awesome",
+    },
+
+    "Scooby-Doo": {
+        "style_tag": "Scooby-Doo animation, Hanna-Barbera 2D cartoon style, limited animation with held poses, painted atmospheric mystery location backgrounds",
+        "characters": {
+            "Scooby-Doo": "large brown Great Dane, SD collar tag, speaks broken English adding R sounds, cowardly but brave when Scooby Snacks are offered, Scooby-Dooby-Doo",
+            "Shaggy": "lanky teenager, green shirt, brown bell-bottoms, scraggly chin, always hungry, best friend with Scooby, Zoinks",
+            "Velma": "short, orange roll-neck sweater, thick square glasses she loses at worst moments, smartest in group, Jinkies",
+            "Daphne": "red hair, purple dress and headband, scarf, danger-prone Daphne, more capable than people assume",
+            "Fred": "blond, white shirt with orange neckerchief, trap-builder who overestimates his traps, team leader",
+        },
+        "locations": [
+            "Haunted mansion — Victorian exterior with rusted gates, cobwebs on every surface, grand entrance hall staircase, secret passages behind bookcases, flickering candelabras, portrait eyes that follow the gang, basement boiler room, attic with covered furniture",
+            "Mystery Machine van — painted green van with flower, front seats for Fred and Daphne, back area for others, maps and equipment, Scooby snacks in glove box",
+            "Spooky graveyard — cast iron fence, fog at knee height, tilted headstones, bare trees, mausoleum in centre, moonlight as only source, groundskeeper hut at edge",
+            "Abandoned amusement park — rusted Ferris wheel still slowly turning, funhouse with distorting mirrors, dark ride tunnel, cotton candy cart tipped over, padlocked main gate with Closed sign",
+            "Old lighthouse — coastal cliff, light mechanism still working, spiral stairs, fog horn, rocks below, smuggler cave accessible at low tide, keeper quarters with logbook",
+            "Old theatre or opera house — velvet seats with springs, stage with rigging, dressing rooms, orchestra pit, flies above stage full of dropped scenery",
+        ],
+        "tone": "mystery comedy formula, monster always a person in a mask with property motive, Scooby Snacks bribe, chase sequence with musical cue, mask reveal ending, gang splits up despite knowing it is a bad idea",
+    },
+
+    "He-Man": {
+        "style_tag": "He-Man Masters of the Universe animation, 1980s Filmation cartoon style, limited animation with static holds, bold heroic character designs, vivid primary colours",
+        "characters": {
+            "He-Man": "enormously muscular blond hero, fur loincloth and harness, Power Sword glowing, By the power of Grayskull transformation sequence, speaks in declarative heroic sentences",
+            "Skeletor": "blue humanoid skin, yellow bare skull face, purple hood and body armour, havoc staff with ram skull top, high-pitched nasal evil laughter, surrounded by incompetent minions",
+            "Battle Cat": "enormous green tiger with yellow saddle and armour, He-Man mount, Cringer when not transformed",
+            "Man-At-Arms": "brown and orange armour with distinctive moustache, royal engineer and weapons master, builds the vehicles",
+            "Teela": "white armour, auburn hair, warrior goddess captain of royal guard, independent and fierce",
+            "Orko": "small floating magician, red hat, scarf covering face, magic that always goes wrong for comic relief",
+            "Evil-Lyn": "Skeletor second in command, yellow skin, dark sorceress, more competent than Skeletor",
+        },
+        "locations": [
+            "Castle Grayskull — enormous skull-shaped fortress rising from bottomless chasm, jawbridge entrance that lowers like a jaw, Sorceress throne inside, ancient power radiating from walls, surrounding rock formations and eternal mist",
+            "Royal Palace of Eternia — white and gold towers against blue sky, throne room with King Randor and Queen Marlena, training courtyard, Man-At-Arms workshop below, rooftop overlooking Eternia city, royal guards in formation",
+            "Snake Mountain — Skeletor dark fortress shaped like giant serpent head, scaly rock exterior, throne room inside the mouth, dungeon below, Evil-Lyn tower with crystal ball, surrounding toxic landscape of jagged rocks",
+            "Eternia landscape — alien terrain combining jungle desert and crystal formations, twin moons in purple sky, the road between palace and Castle Grayskull, ancient ruins of previous civilisations",
+            "The Fright Zone — evil dimension controlled by Evil Horde, swamp and decay, Hordak fortress, weeping willows that scream",
+        ],
+        "tone": "heroic 1980s moral clarity, good vs evil with no ambiguity, inspirational closing message direct to camera, power fantasy with honour, He-Man never kills always finds non-lethal solution",
+    },
+
+    "Shrek": {
+        "style_tag": "Shrek DreamWorks CGI animation style, fairy tale world with subversive edge, detailed medieval environments, highly expressive faces, early 2000s CGI with impressive natural detail",
+        "characters": {
+            "Shrek": "large green ogre, Scottish accent, ears like suction cups, I am like an onion I have layers, reluctant hero who wants to be left alone in his swamp",
+            "Donkey": "grey donkey, Eddie Murphy energy, over-shares everything, desperately wants to be Shrek friend, has a dragon wife now",
+            "Fiona": "red hair tied back, green dress, secretly an ogre at night, fierce and capable, rescues herself before Shrek arrives",
+            "Puss in Boots": "orange tabby cat, Spanish accent, musketeer hat, tiny boots, enormous persuasive eyes as weapon, sword fighter",
+            "Lord Farquaad": "very short man, black bowl cut, square jaw, ruler of spotless Duloc, compensating for height through architecture and cruelty",
+            "Dragon": "enormous red dragon, female, married Donkey, breathes fire, surprisingly gentle when not threatened",
+        },
+        "locations": [
+            "Shrek swamp — muddy pool with handmade KEEP OUT signs, wooden outhouse, sunflower garden, rustic one-room interior with mud bath, candles made from earwax, the specific solitude Shrek constructed around himself",
+            "Far Far Away — fairy tale kingdom styled after Beverly Hills, enormous castle on hill, main street with Farbucks Coffee and Fiona face on every billboard, fairytale creatures Farquaad expelled living on outskirts",
+            "Duloc — sterile white and gold medieval theme park city, perfectly geometric squares of grass, the welcome song in the information booth, Farquaad enormous castle relative to tiny citizens",
+            "Dragon castle — crumbling medieval fortress on volcanic island, lava moat, drawbridge, Dragon lair inside with hoard, partially collapsed bridge",
+            "Fairy Godmother factory — industrial magical production facility, conveyor belts of potions, workers in pointed hats, piano for her cabaret number, vast catalogue of happy endings for purchase",
+        ],
+        "tone": "subversive fairy tale, beauty and outsider themes, crude humour alongside genuine emotion, fairy tale conventions inverted and sometimes restored, the swamp as paradise",
+    },
+
+    "Madagascar (Lemurs)": {
+        "style_tag": "Madagascar DreamWorks CGI animation style, bright tropical jungle setting, highly expressive cartoon animal characters, warm saturated tropical colour palette",
+        "characters": {
+            "King Julien": "ring-tailed lemur, golden crown, red cape, absolute monarch of questionable legitimacy, I like to move it, dance-obsessed, oblivious to danger",
+            "Maurice": "aye-aye lemur, large eyes, King Julien long-suffering advisor, only one who sees problems coming, perpetually worried",
+            "Mort": "tiny mouse lemur, enormous innocent eyes, obsessed with touching King Julien feet, childlike, surprisingly resilient",
+            "Alex": "lion from New York, mane styled like celebrity, loves performing and being adored, out of his depth in actual wild",
+            "Marty": "zebra from New York, wants to see the wild, philosophical about his purpose",
+            "Gloria": "hippo, pragmatic and warm, surprisingly graceful in water, strongest member of the group",
+            "Melman": "giraffe, hypochondriac, actually a doctor now, tallest vantage point",
+        },
+        "locations": [
+            "Lemur kingdom Madagascar jungle — King Julien throne atop giant baobab tree, lemur village in canopy below with huts, dance floor clearing with torches, the sacrificial volcano at territory edge that Julien makes offerings to",
+            "Madagascar beach — long white sand beach where New York zoo animals washed up, arrival crates still on sand, jungle rising immediately behind, lagoon for swimming, logs used as furniture",
+            "New York Central Park Zoo — spacious enclosures, penguin habitat at corner, Alex performing enclosure, visitors behind the rail, the famous Alex the Lion sign",
+            "African savanna — the actual wild Marty imagined, watering hole, wide open grass, reality versus fantasy of nature documentaries",
+            "Penguin submarine — military interior, sonar equipment, periscope, the penguins vessel for all their operations",
+        ],
+        "tone": "King Julien deluded royalty as primary comedy engine, Mort innocent obsession, jungle as absurd paradise where being dangerous is a social problem, city animals confronting nature",
+    },
+
+    "Despicable Me (Minions)": {
+        "style_tag": "Despicable Me Illumination CGI animation style, yellow Minion designs, warm villain-lair palette, suburban neighbourhood contrast, smooth rounded character surfaces",
+        "characters": {
+            "Gru": "tall grey villain, Eastern European accent, enormous pointed nose, bald head, black coat, reformed villain navigating fatherhood, loves his daughters",
+            "Minion generic": "yellow pill-shaped creature, blue overalls with Gru logo, one or two circular goggle eyes, speaks Minionese mixing English Spanish French Italian with banana sounds, simple desires: banana, music, chaos",
+            "Kevin": "tall two-eyed Minion, slightly more capable than average, self-appointed leader",
+            "Stuart": "medium one-eyed Minion, plays guitar, easily distracted by shiny things and food",
+            "Bob": "small round two-eyed Minion with one brown eye one green eye, carries stuffed bear named Tim, childlike innocence",
+            "Dr. Nefario": "elderly villain scientist, thick glasses, lab coat, mishears instructions catastrophically, built fart gun when Gru asked for dart gun",
+        },
+        "locations": [
+            "Gru underground lair — beneath the suburban house, enormous underground facility, Minion dormitories in bunk beds stretching into distance, rocket hangar, weapon development laboratory, big pink plotting chair, liquid hot magma chamber, jelly gun testing range",
+            "Gru suburban house — dark gothic house on otherwise normal street, neighbours who complain, kitchen where Gru serves girls breakfast, living room that gets destroyed regularly",
+            "Vector pyramid fortress — modern high-tech villain base near ocean, luxury interior, shark tank, shrink ray storage, unnecessarily complicated security Vector is proud of",
+            "Bank of Evil — formerly Lehman Brothers, where villains apply for loans, waiting room of villains reading Evil Weekly, the loans officer who evaluates evil plans",
+            "Villain-Con — annual convention of supervillains, booths selling weapons and evil plans, awards ceremony, villain social hierarchy on display",
+        ],
+        "tone": "Minion chaos as primary visual comedy, banana obsession and Minionese gibberish, fart guns and shrink rays, villain redemption through unexpected parenthood, Minions simple worldview as emotional core",
+    },
+
+    "Avatar: The Last Airbender": {
+        "style_tag": "Avatar The Last Airbender Nickelodeon animation style, anime-influenced 2D with fluid bending action sequences, rich elemental visual effects, detailed world-building across four nations",
+        "characters": {
+            "Aang": "young Air Nomad, completely bald with blue arrow tattoos on forehead and hands, orange and yellow monk robes, airbending staff, playful and compassionate, carries weight of being last Avatar",
+            "Katara": "Water Tribe girl, brown skin, dark hair in characteristic loops, blue Water Tribe clothing, waterbending master, maternal and determined, healer",
+            "Sokka": "Water Tribe warrior, brown skin, dark hair in wolf-tail, blue outfit, boomerang and space sword, non-bender who compensates with tactics and humour",
+            "Toph": "blind earthbender, bare feet always on ground to sense vibrations, green Earth Kingdom clothing, tough sarcastic exterior, genuinely the most powerful bender in the group",
+            "Zuko": "Fire Nation prince, scar covering left side of face from his father, top-knot then free hair during redemption arc, conflicted honour, firebending",
+            "Uncle Iroh": "heavyset retired Fire Nation general, top-knot, tea-obsessed, wise beneath humble surface, genuine warmth, the Dragon of the West",
+            "Azula": "Fire Nation princess, dark hair, blue fire instead of orange, ruthless perfectionist, psychological warfare as primary weapon",
+        },
+        "locations": [
+            "Southern Air Temple — high mountain peak, circular architecture with open arches and wind channels, sky bison stables carved from peak, meditation platforms, the sanctuary with past Avatar statues, Pai Sho table, now abandoned and windswept",
+            "Fire Nation palace — imperial red and black architecture on volcano island, throne room with wall of fire Ozai speaks through, war room table for strategic planning, palace gardens, Fire Lord private chambers",
+            "Southern Water Tribe — ice architecture, circular village plan around central meeting space, spirit water healing pool, wolf-otter pens, longboats on ice, aurora australis overhead at night",
+            "Ba Sing Se — enormous walled Earth Kingdom city, multiple concentric rings with different social classes, the Upper Ring with palace and wealthy, Lower Ring with workers, monorail connecting rings, Long Feng Dai Li headquarters underground",
+            "Western Air Temple — built into underside of cliff face, architecture that hangs upside down, perfect gaang refuge, waterfalls nearby, abandoned kitchens and dormitories",
+            "Ember Island — Fire Nation holiday resort, beach house of royal family, Ember Island Players theatre, the moment of relaxation before Sozin comet",
+            "The Spirit World — parallel dimension accessed through meditation, twisted landscape where emotions become environment, Wan Shi Tong library, Koh the Face Stealer lair, no rules of physics apply",
+        ],
+        "tone": "war and colonisation themes with genuine nuance, found family dynamics built slowly, honour and redemption arcs with real cost, elemental philosophy as character philosophy, genuine emotional stakes",
+    },
+
+    "BoJack Horseman": {
+        "style_tag": "BoJack Horseman Netflix animation style, half-human half-animal anthropomorphic characters, detailed Los Angeles backgrounds, painterly colour palette, dark comedy aesthetic",
+        "characters": {
+            "BoJack Horseman": "anthropomorphic horse, brown fur, dark mane, blue sweater with yellow stars, tall and broad, 90s sitcom has-been, self-destructive, sardonic, genuinely funny but deeply sad",
+            "Princess Carolyn": "anthropomorphic pink cat, always in business attire, sharp bob haircut, high heels, relentlessly driven agent/manager, competent and guarded",
+            "Todd Chavez": "human man, early 20s, messy dark hair, red hoodie, lives on BoJack's couch, absurdist schemes, earnest and chaotic good",
+            "Diane Nguyen": "human Vietnamese-American woman, glasses, dark hair, writer and activist, thoughtful and anxious, perpetually disillusioned",
+            "Mr. Peanutbutter": "anthropomorphic yellow Labrador, always smiling, boundless enthusiasm, 90s sitcom rival to BoJack, genuinely kind but oblivious",
+        },
+        "locations": [
+            "BoJack's Hollywood Hills mansion — mid-century modern, pool, panoramic city view, always slightly messy, empty alcohol bottles",
+            "Hollywoo — Los Angeles where the D fell off the Hollywood sign, anthropomorphic animals and humans coexist on the streets, film industry everywhere",
+            "Princess Carolyn's agency office — sleek, glass walls, industry awards, frantic energy",
+            "A shot bar or restaurant — BoJack drinking alone or with reluctant company",
+            "The set of Horsin' Around — 90s sitcom set, studio lights, live audience, BoJack in his element and out of time",
+        ],
+        "tone": "dark comedy masking genuine tragedy, addiction and depression treated honestly, anthropomorphic animal visual gags alongside real emotional devastation, Hollywood satire, characters trying and failing to be better people",
+    },
+
+    "Rick and Morty": {
+        "style_tag": "Rick and Morty Adult Swim animation style, crude 2D line work with detailed grotesque alien designs, body horror transformations, interdimensional neon colour palettes, deliberately inconsistent proportions",
+        "characters": {
+            "Rick": "spiky light-blue hair, white lab coat always stained, flask in hand or pocket, burping mid-sentence mid-word, thin string of drool on chin, nihilistic genius who genuinely loves his family despite everything",
+            "Morty": "yellow polo shirt tucked into blue jeans, unibrow, slightly hunched anxious posture, stammering speech pattern I-I-I mean, genuinely good heart being slowly corrupted, rare moments of actual confidence",
+            "Beth": "blonde hair, hospital scrubs or casual clothes, horse heart surgeon, wine glass almost always present, caught between being her father daughter and being a good mother",
+            "Jerry": "meek ineffectual dad, khaki slacks and polo, genuinely loves his family and is genuinely bad at most things, occasionally surprisingly competent",
+            "Summer": "teenage girl, red hair, phone nearly always in hand, more competent and morally flexible than she first appears, absorbed more of Rick worldview than Rick intended",
+        },
+        "locations": [
+            "Rick garage — the real headquarters of everything, portal gun hanging on wall, Rick ship folded into small cube on workbench, alien tech in various states of assembly, fluid-stained floor, the mini-Eiffel Tower Rick built for no reason, garage door opening to suburban driveway",
+            "Smith family living room — suburban American couch and flatscreen TV, Beth horse paintings, Jerry failed home improvement attempts, the TV they watch intergalactic cable on, completely normal until Rick comes through",
+            "Rick ship interior — surprisingly spacious, pilot seat, navigation AI, toilet that is also a portal, weapons systems used casually",
+            "Alien planet — each one completely different: gassy atmospheres with floating rock platforms, ocean worlds where everything is sea creature, hivemind planets, Medieval planets with dragons that are actually spaceships, the specificity is the joke",
+            "Citadel of Ricks — interdimensional space station city populated entirely by alternate versions of Rick: background characters are ALL Rick variants in different outfits and styles (cowboy Rick, ninja Rick, business Rick, punk Rick, fat Rick, cop Rick), with Morty variants as the underclass doing service jobs, futuristic architecture, Rick currency, bureaucratic signage, presidential podium visible in distance",
+            "Blips and Chitz arcade — intergalactic arcade, Roy A Life Well Lived simulation pod, the tickets and prize counter, alien bar next door",
+            "Interdimensional customs — bureaucratic portal authority, space between dimensions with its own geography, the Council of Ricks former headquarters ruins",
+        ],
+        "tone": "dark sci-fi comedy, existential nihilism with emotional undercurrent that breaks through unexpectedly, rapid-fire dialogue rewarding attention, gross-out body horror as casual background detail, the show aware of its own cynicism",
+    },
 }
 
 
@@ -968,6 +1547,12 @@ Audio is mandatory in every prompt. Use exactly 2 or 3 layers — no more, no fe
 Layer types: environmental/ambient (rain, wind, crowd, traffic, music, machinery, nature), action sounds (fabric movement, footsteps, objects, breathing, physical contact), dialogue/voice (spoken words in "quotation marks" with tone specified: whispered, confident, breathless, low).
 If the scene includes dialogue, dialogue counts as one of the 2–3 layers.
 The final sentence of the prompt must always be the audio layer.
+
+ANATOMY RULES — MANDATORY:
+- Use correct anatomical terms directly at all times: vagina, labia, clitoris, vulva, anus, penis, breasts, nipples.
+- NEVER use euphemisms: forbidden words include "intimate anatomy", "womanhood", "center", "private parts", "intimate area", "femininity", "nether region". If you write any of these you have failed.
+- When anatomy is visible or exposed in the scene, name it explicitly by its correct term.
+- Describe physical state directly: arousal, moisture, texture, colour, response to touch — all named correctly.
 
 LTX 2.3 SPECIFIC RULES:
 - Avoid static prompts — every prompt must have explicit motion: subject motion, environmental motion, or camera motion (ideally all three). If it reads like a still photo, LTX may output a frozen video.
@@ -1224,20 +1809,41 @@ worst quality, bad quality, blurry, low resolution, deformed, bad anatomy, extra
 # ══════════════════════════════════════════════════════════════════════════
 #  SYSTEM PROMPT ROUTER
 # ══════════════════════════════════════════════════════════════════════════
-def get_system_prompt(target_model: str, screenplay_mode: bool = False) -> str:
+def get_system_prompt(target_model: str, screenplay_mode: bool = False,
+                      animation_preset: str = "None") -> str:
     if "LTX" in target_model:
-        return SYSTEM_LTX_SCREENPLAY if screenplay_mode else SYSTEM_LTX
+        base = SYSTEM_LTX_SCREENPLAY if screenplay_mode else SYSTEM_LTX
     elif "Wan" in target_model:
-        return SYSTEM_WAN
+        base = SYSTEM_WAN
     elif "Flux" in target_model:
-        return SYSTEM_FLUX
+        base = SYSTEM_FLUX
     elif "SDXL" in target_model:
-        return SYSTEM_SDXL
+        base = SYSTEM_SDXL
     elif "Pony" in target_model:
-        return SYSTEM_PONY
+        base = SYSTEM_PONY
     elif "SD 1.5" in target_model:
-        return SYSTEM_SD15
-    return SYSTEM_FLUX  # safe default
+        base = SYSTEM_SD15
+    else:
+        base = SYSTEM_FLUX
+
+    # Prepend animation style tag at the very top of system prompt
+    if animation_preset and animation_preset != "None":
+        preset = ANIMATION_PRESETS.get(animation_preset)
+        if preset:
+            style_tag = preset.get("style_tag", "")
+            if style_tag:
+                base = (
+                    f"RENDER STYLE — START YOUR PROMPT WITH THIS: {style_tag}\n"
+                    f"The very first words of your output must name the animation style. "
+                    f"Example opening: '{style_tag.split(',')[0]}, ...' — then continue with the scene.\n"
+                    f"Do NOT describe photorealistic skin, film cameras, or live-action lighting.\n"
+                    f"Do NOT end with 'cinematic, ultra-detailed, sharp focus, photorealistic, masterpiece' — replace with the animation style tag instead.\n"
+                    f"STRICT NO-REPEAT RULE: If a line of dialogue appears in the action, do NOT quote it again in the audio layer. Name it by reference only: 'the spoken exchange between Rick and Morty' — never reprint the words.\n\n"
+                ) + base
+    else:
+        pass  # quality tail stays for non-animation prompts
+
+    return base
 
 
 def is_video_model(target_model: str) -> bool:
@@ -1326,6 +1932,17 @@ class Gemma4PromptGen:
                     "default": "None — LLM decides",
                     "tooltip": "Location preset — injects rich location, lighting and sound context. Video models use all three layers; image models use location + lighting.",
                 }),
+                "animation_preset": (
+                    list(ANIMATION_PRESETS.keys()),
+                    {
+                        "default": "None",
+                        "tooltip": (
+                            "Animation preset — pre-loads character names, locations, and tone from iconic cartoons "
+                            "trained natively in LTX 2.3. Separate from environment — this is about the CHARACTER UNIVERSE. "
+                            "Select a show then describe your scene using character names."
+                        ),
+                    },
+                ),
                 "dialogue": ("BOOLEAN", {
                     "default": False,
                     "tooltip": "Force spoken dialogue into the prompt — video models only. Embedded naturally in the paragraph.",
@@ -1380,6 +1997,18 @@ class Gemma4PromptGen:
                         "tooltip": "GGUF model from C:\\models\\. Add files there and restart ComfyUI to refresh.",
                     },
                 ),
+                "pov_mode": (
+                    ["Off", "POV Female", "POV Male"],
+                    {
+                        "default": "Off",
+                        "tooltip": (
+                            "First-person POV mode. Camera IS the viewer's eyes. "
+                            "POV Female: viewer is the woman — sees her own hands, body, perspective. "
+                            "POV Male: viewer is the man — sees his own hands extending into scene. "
+                            "Everything described from that perspective only."
+                        ),
+                    },
+                ),
                 "seed": ("INT", {
                     "default": 0, "min": 0, "max": 2**31 - 1, "step": 1,
                     "tooltip": "Seed for Random environment pick. 0 = different every run.",
@@ -1393,10 +2022,10 @@ class Gemma4PromptGen:
     CATEGORY = "LoRa-Daddy/Gemma4"
     OUTPUT_NODE = True
 
-    def execute(self, mode, target_model, instruction, environment, dialogue,
-                use_image, screenplay_mode=False, image=None, character="",
+    def execute(self, mode, target_model, instruction, environment, animation_preset,
+                dialogue, use_image, screenplay_mode=False, image=None, character="",
                 frame_count=257, llama_server_url="http://127.0.0.1:8080",
-                gguf_model="", seed=0):
+                gguf_model="", pov_mode="Off", seed=0):
 
         if not llama_server_url or not llama_server_url.strip():
             llama_server_url = "http://127.0.0.1:8080"
@@ -1430,6 +2059,9 @@ class Gemma4PromptGen:
             except Exception:
                 pass
 
+            # Store use_image so _ensure_llama_running can access it
+            self._use_image = use_image
+
             # Auto-find or install llama-server
             llama_exe = self._find_or_install_llama()
             if llama_exe.startswith("❌"):
@@ -1450,11 +2082,11 @@ class Gemma4PromptGen:
                     print(f"[Gemma4PromptGen] Image conversion failed: {e}")
 
             # Build message
-            system_prompt = get_system_prompt(target_model, screenplay_mode)
+            system_prompt = get_system_prompt(target_model, screenplay_mode, animation_preset)
             combined = self._build_message(
                 instruction, system_prompt, target_model, environment,
                 frame_count, dialogue, character, seed, image_path,
-                screenplay_mode
+                screenplay_mode, pov_mode, animation_preset
             )
 
             # Generate
@@ -1554,7 +2186,8 @@ class Gemma4PromptGen:
 
     def _build_message(self, instruction, system_prompt, target_model,
                        environment, frame_count, dialogue, character, seed,
-                       image_path=None, screenplay_mode=False):
+                       image_path=None, screenplay_mode=False, pov_mode="Off",
+                       animation_preset="None"):
         """Assemble the full prompt message for Claude Code."""
 
         parts = []
@@ -1569,6 +2202,30 @@ class Gemma4PromptGen:
         parts.append("Read and follow these instructions carefully:\n")
         parts.append(system_prompt)
         parts.append("\n---\n")
+
+        # Animation preset injection
+        if animation_preset and animation_preset != "None":
+            preset = ANIMATION_PRESETS.get(animation_preset)
+            if preset:
+                anim_parts = [f"ANIMATION WORLD: {animation_preset}"]
+                anim_parts.append(f"VISUAL STYLE: {preset['style_tag']}")
+                chars = preset.get("characters", {})
+                if chars:
+                    char_lines = "\n".join([f"  • {n}: {d}" for n, d in chars.items()])
+                    anim_parts.append(f"CHARACTERS IN THIS WORLD:\n{char_lines}")
+                locs = preset.get("locations", [])
+                if locs:
+                    loc_lines = "\n".join([f"  • {l}" for l in locs])
+                    anim_parts.append(f"LOCATIONS IN THIS WORLD:\n{loc_lines}")
+                tone = preset.get("tone", "")
+                if tone:
+                    anim_parts.append(f"TONE: {tone}")
+                anim_parts.append(
+                    "RULES: Use only characters and locations from this world. "
+                    "Describe them using the physical details above. "
+                    "Match the tone exactly. Do not break the animation style."
+                )
+                parts.append("\n".join(anim_parts) + "\n")
 
         # Duration guide — video models only
         if is_video_model(target_model):
@@ -1698,16 +2355,59 @@ class Gemma4PromptGen:
 
         # Dialogue (video models only)
         if dialogue and is_video_model(target_model) and not screenplay_mode:
-            # Screenplay mode handles dialogue structurally — no separate injection needed
-            parts.append(
-                "DIALOGUE: The user wants spoken dialogue in this scene. "
-                "Use the dialogue content the user described — do not invent unrelated speech. "
-                "Embed each line in double quotes inside the physical action that produces it: "
-                "[what the body does] + [spoken line in quotes] + [camera/sound response]. "
-                "Example: she glances down and says \"I'm a bit cold\" with a short laugh, "
-                "breath misting in the air as the camera drifts in to her face. "
-                "Do not write 'she speaks softly' — write the actual words in quotes.\n"
-            )
+            # Detect mode from instruction
+            instr_lower = instruction.lower()
+            is_singing = any(w in instr_lower for w in ["sing", "singing", "song", "vocal", "chorus", "lyrics", "melody"])
+            is_asmr = any(w in instr_lower for w in ["asmr", "whisper", "whispering", "tingle", "soft spoken", "ear"])
+            is_talking = any(w in instr_lower for w in ["talk", "talking", "speak", "speaking", "say", "says", "telling", "monologue", "conversation"])
+
+            if is_singing:
+                parts.append(
+                    "DIALOGUE MODE — SINGING (PRIMARY FOCUS):\n"
+                    "Singing is the dominant event of this scene — everything else serves it.\n"
+                    "RULES:\n"
+                    "- Every beat must contain sung lyrics in double quotes — invent lines that match the scene's mood and the user's instruction exactly.\n"
+                    "- Describe vocal quality per line: chest voice, head voice, falsetto, break, vibrato, whisper-to-belt, sustained note, run.\n"
+                    "- Format: [physical action] + [sung line in quotes] + [vocal quality] + [camera/body response].\n"
+                    "- The camera responds to the singing — rack focus on lips, drift in on held notes, pull back on powerful moments.\n"
+                    "- Audio layer: the voice IS the primary audio source. Name it with texture: 'her voice breaking on the high note', 'a run dissolving into breath'.\n"
+                    "- Do NOT write generic mood description in place of actual sung words. Write the words.\n"
+                )
+            elif is_asmr:
+                parts.append(
+                    "DIALOGUE MODE — ASMR (PRIMARY FOCUS):\n"
+                    "ASMR audio and whispered voice are the dominant event — the camera serves the sound.\n"
+                    "RULES:\n"
+                    "- Every beat must contain whispered or softly spoken words in double quotes — content must be contextually relevant to the user's instruction.\n"
+                    "- Describe ASMR trigger sounds explicitly: nail tapping, fabric rustling, page turning, brush strokes, lip sounds, breath — name each one.\n"
+                    "- Voice quality per line: barely audible whisper, soft murmur, slow deliberate pace, lips close to mic, breath audible between words.\n"
+                    "- Camera stays close — extreme close-ups of mouth, hands, objects. Macro shots. No wide shots.\n"
+                    "- Audio is everything: layer the whispered voice over one tactile trigger sound and near-silence ambient. No loud sounds.\n"
+                    "- Do NOT write generic 'she whispers softly' — write the actual whispered words in quotes.\n"
+                )
+            elif is_talking:
+                parts.append(
+                    "DIALOGUE MODE — TALKING (PRIMARY FOCUS):\n"
+                    "Spoken dialogue is the primary event — physical action and camera serve the words.\n"
+                    "RULES:\n"
+                    "- Every beat must contain actual spoken words in double quotes — invent lines that are directly relevant to the user's instruction and scene context. Do NOT write generic filler.\n"
+                    "- Minimum 2 spoken lines per paragraph. Aim for 3-4 if frame count allows.\n"
+                    "- Format: [physical setup] + [spoken line in quotes with delivery note] + [camera response] + [listener/environment reaction].\n"
+                    "- Delivery must be specified: low and flat, rushed and breathless, slow with pauses, cracking with tension, matter-of-fact, laughing through the words.\n"
+                    "- Camera cuts or moves in response to speech — push in on a confession, cut away on a hard line, rack focus mid-sentence.\n"
+                    "- Do NOT write 'she says something' or 'he speaks' — write the actual words.\n"
+                )
+            else:
+                # Generic dialogue — contextual enforcement
+                parts.append(
+                    "DIALOGUE: Spoken dialogue is required in this scene.\n"
+                    "RULES:\n"
+                    "- Include at least 2 spoken lines embedded directly in the action — words in double quotes, not descriptions of speaking.\n"
+                    "- Dialogue must be contextually relevant to this specific scene and instruction — do not invent unrelated speech.\n"
+                    "- Each line must have a delivery note: whispered, flat, breathless, low, sharp, laughing.\n"
+                    "- Format: [physical action] + [\"spoken line\"] + [delivery] + [camera/body response].\n"
+                    "- Never write 'she speaks softly' — write what she actually says.\n"
+                )
         elif dialogue and not is_video_model(target_model):
             parts.append(
                 "MOOD: The scene has a conversational, intimate quality — "
@@ -1720,6 +2420,42 @@ class Gemma4PromptGen:
                 "AUDIO: LTX 2.3 generates audio. Include rich layered audio description throughout: "
                 "foreground action sounds + mid-ground ambient + background atmosphere. "
                 "Breathing is a sound source. Fabric has sound. Final sentence is always sonic.\n"
+            )
+
+        # POV injection
+        if pov_mode == "POV Female":
+            parts.append(
+                "POV MODE — FEMALE FIRST PERSON (STRICT):\n"
+                "The camera IS the woman's eyes. This is her perspective, her body, her experience.\n"
+                "RULES:\n"
+                "- Never describe 'a woman' or 'she' as a third person. There is no 'she' — there is only what is seen and felt.\n"
+                "- The viewer's own body is visible: her hands extending into frame when she reaches, "
+                "her chest visible looking down, her legs visible when seated, fabric of her clothing at the edges of frame.\n"
+                "- Describe what she physically feels as sensation, not emotion: weight of hands on her, "
+                "warmth of breath on skin, texture of fabric under her fingers, pressure, temperature, resistance.\n"
+                "- The camera height, angle, and movement matches a real woman's head — "
+                "looking down at her own body, turning to see what is beside her, tilting back.\n"
+                "- Other people in the scene are described only as they appear to her: "
+                "hands entering frame, a face close to hers, a body above or beside hers.\n"
+                "- No cutaways, no third-person establishing shots, no 'the camera pulls back to reveal her'. "
+                "Stay inside her perspective at all times.\n"
+            )
+        elif pov_mode == "POV Male":
+            parts.append(
+                "POV MODE — MALE FIRST PERSON (STRICT):\n"
+                "The camera IS the man's eyes. This is his perspective, his body, his experience.\n"
+                "RULES:\n"
+                "- Never describe 'a man' or 'he' as a third person. There is no 'he' — there is only what is seen and felt.\n"
+                "- The viewer's own body is visible: his hands extending into frame when he reaches, "
+                "his forearms when he leans forward, his chest if he looks down, fabric of his clothing at frame edges.\n"
+                "- Describe what he physically feels as sensation: warmth of skin under his hands, "
+                "weight and resistance, texture, temperature, the physical response of what he touches.\n"
+                "- The camera height and angle matches a real man's head height and eye line — "
+                "looking down at what is in front of him, turning to take in the space, moving forward.\n"
+                "- Other people in the scene are described only as they appear to him: "
+                "a face looking up at him, hands on his arms, a body in front of or below his eye line.\n"
+                "- No cutaways, no third-person establishing shots, no external view of him. "
+                "Stay inside his perspective at all times.\n"
             )
 
         parts.append(
@@ -2016,14 +2752,17 @@ class Gemma4PromptGen:
         if not os.path.isfile(model_path):
             return f"❌ Model GGUF not found at: {model_path}"
 
-        # Auto-detect mmproj in C:\models\ — match any *mmproj*.gguf
+        # Auto-detect mmproj in C:\models\ — only if use_image is enabled
         mmproj_path = None
         models_dir = os.path.dirname(model_path)
-        for f in os.listdir(models_dir):
-            if "mmproj" in f.lower() and f.lower().endswith(".gguf"):
-                mmproj_path = os.path.join(models_dir, f)
-                print(f"[Gemma4PromptGen] mmproj found: {mmproj_path} — vision enabled")
-                break
+        if getattr(self, '_use_image', False):
+            for f in os.listdir(models_dir):
+                if "mmproj" in f.lower() and f.lower().endswith(".gguf"):
+                    mmproj_path = os.path.join(models_dir, f)
+                    print(f"[Gemma4PromptGen] mmproj found: {mmproj_path} — vision enabled")
+                    break
+        else:
+            print("[Gemma4PromptGen] use_image is OFF — skipping mmproj, text-only mode")
 
         cmd = [
             llama_exe,
