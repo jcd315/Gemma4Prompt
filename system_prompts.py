@@ -3,7 +3,7 @@ System prompts, presets, and message-building utilities for Gemma4PromptGen.
 
 Contains:
   - ENVIRONMENT_PRESETS: ~70 environment tuples (location, lighting, sound)
-  - ANIMATION_PRESETS: 14 cartoon/animation universe definitions
+  - ANIMATION_PRESETS: 24 cartoon/animation universe definitions
   - TARGET_MODELS: model dropdown options
   - System prompt strings for each target model (LTX, Wan, Flux, SDXL, Pony, SD1.5)
   - get_system_prompt(), is_video_model(), has_audio() helpers
@@ -1166,6 +1166,337 @@ ENVIRONMENT_PRESETS = {
         "wind gusting through the station structure and the railing producing a changing pitch, "
         "and the researcher's respirator — the mechanical rhythm of filtered breath "
         "audible in the brief pauses between eruption pulses"),
+
+    # ── HISTORICAL ──────────────────────────────────────────────────────
+    "🕯 Victorian parlor — gaslight afternoon": (
+        "high-ceilinged parlor with dark walnut wainscoting rising to shoulder height, "
+        "heavy velvet drapes in deep burgundy pulled half-open at tall sash windows, "
+        "a Persian rug in faded crimson and navy covering most of the hardwood floor, "
+        "oil paintings in ornate gilded frames lining the upper walls, "
+        "a marble fireplace with a brass fender, antimacassars on every chair, "
+        "lace curtains diffusing the afternoon light into soft white panels",
+        "warm afternoon daylight entering through lace curtains — soft, diffused, slightly golden, "
+        "gaslamp sconces on the walls providing a secondary amber fill from both sides, "
+        "deep shadows pooling behind the heavy furniture and in the folds of the drapes, "
+        "the overall palette warm mahogany and cream with gold accents from the gas flames",
+        "the faint hiss of gas mantles on the wall sconces, a carriage clock ticking on the mantelpiece, "
+        "the muffled clatter of a horse-drawn cab passing on cobblestones outside, "
+        "fabric rustling as someone shifts in a wingback chair, "
+        "the distant clang of a servant's bell from deeper in the house"),
+
+    "⚔ Medieval castle — torchlit stone": (
+        "soaring great hall of a medieval castle, rough-hewn limestone walls rising three storeys "
+        "to massive dark oak beams spanning the vaulted ceiling, "
+        "a long wooden trestle table running the centre of the hall, scarred with use, "
+        "iron torch sconces bolted into the stone at irregular intervals, "
+        "a cold flagstone floor with rushes scattered underfoot, "
+        "tapestries hanging on the far wall depicting hunting scenes, faded and smoke-darkened",
+        "torchlight from iron sconces — warm orange with a strong flicker, "
+        "each torch casting its own moving shadow that shifts with every draught, "
+        "deep black shadow between the pools of light, the ceiling lost in darkness above the beam line, "
+        "torch smoke curling upward in visible ribbons caught by the updraught",
+        "the crack and spit of burning pitch in the torches, wind finding gaps in the shuttered windows, "
+        "a deep ambient echo off the stone walls turning every sound into a trailing reverb, "
+        "distant metallic clang of a gate or chain somewhere in the keep, "
+        "the rush of air through the chimney flue at the far end of the hall"),
+
+    "🍷 1920s speakeasy — jazz age": (
+        "underground speakeasy hidden behind a false wall, low ceiling with exposed pipes, "
+        "dim red velvet booths lining the walls, a polished mahogany bar with a brass foot rail, "
+        "shelves of amber-brown bottles backlit behind the barkeep, "
+        "cigarette smoke layering the air in visible blue-grey strata, "
+        "Edison bulbs hanging from cloth-wrapped cords casting small warm pools of light, "
+        "a small raised stage in the corner with a drum kit and upright bass",
+        "warm amber Edison bulbs as primary light, each one a visible hot filament, "
+        "deep red tones from the velvet upholstery reflecting into the surrounding shadow, "
+        "smoke catching every light source and turning beams visible, "
+        "the overall palette dark — mahogany, burgundy, brass, and cigarette haze",
+        "a jazz trio playing in the corner — upright bass, muted trumpet, brushes on a snare, "
+        "low conversation and occasional laughter, ice clinking in heavy tumblers, "
+        "the sharp pop of a cocktail shaker, a match striking, "
+        "and beneath it all the muffled thrum of the city above filtering through the ceiling"),
+
+    "🏛 Ancient Rome forum — marble columns": (
+        "the Roman Forum at midday, massive fluted marble columns rising in colonnades, "
+        "white travertine stonework blazing in the direct sun, "
+        "sharp black shadows slicing across the paved ground in geometric patterns cast by the columns, "
+        "distant temples visible through the colonnade with their triangular pediments, "
+        "a broad open plaza with stone steps descending to a lower level, "
+        "inscriptions carved into every surface, pigeons on the upper entablatures",
+        "direct overhead noon sun — nearly shadowless on horizontal surfaces, "
+        "but the columns and porticoes creating hard-edged vertical shadows in parallel stripes, "
+        "the white marble acting as a reflector bouncing fill light into every recess, "
+        "the palette bleached white and pale gold with deep blue sky above",
+        "the acoustic space of open stone — every sound reflecting sharply off marble, "
+        "distant crowd murmur echoing across the plaza, footsteps on stone, "
+        "pigeons taking flight in a sudden clatter of wings, "
+        "wind channelling between the colonnades in a low sustained note"),
+
+    # ── SCI-FI ──────────────────────────────────────────────────────────
+    "🛸 Cyberpunk street market — neon rain": (
+        "dense street market at night crammed into a narrow alley between tower blocks, "
+        "holographic signage in Mandarin, Korean, and English flickering above vendor stalls, "
+        "corroded metal awnings extending over tables of electronics and street food, "
+        "wet pavement reflecting RGB neon in smeared colour streaks — magenta, cyan, amber, "
+        "cables and conduits strung overhead in tangled bundles between buildings, "
+        "steam rising from grills mixing with light rain in the neon glow",
+        "neon as the dominant light source — no natural light, no sky visible, "
+        "holographic projections adding shifting coloured fill that changes with each sign cycle, "
+        "wet surfaces doubling every light source in distorted reflections, "
+        "deep shadow in every gap between stalls, the overall palette saturated and high-contrast",
+        "rain on metal awnings in a continuous irregular drumming, "
+        "vendors calling out in overlapping languages, sizzling oil from food stalls, "
+        "electronic music bleeding from a doorway, the hum of transformers and neon ballasts, "
+        "a police drone passing overhead with a low mechanical whine"),
+
+    "🔬 Sci-fi research lab — clean room": (
+        "sterile research lab with smooth white walls and seamless floor, "
+        "transparent barrier walls dividing the space into containment zones, "
+        "holographic displays floating above minimalist workstations showing data streams and molecular models, "
+        "robotic arms suspended from ceiling tracks in standby position, "
+        "a specimen chamber at the centre of the room glowing faintly from internal illumination, "
+        "every surface immaculate, no dust, no fingerprints, no imperfection",
+        "soft diffused blue-white LED panels embedded in the ceiling providing even shadowless illumination, "
+        "the holographic displays adding subtle cyan and green accents to nearby surfaces, "
+        "the specimen chamber casting a warm amber glow outward in a contained radius, "
+        "the overall palette clinical white with cool blue undertones",
+        "near-silence — the soft hum of air filtration cycling continuously, "
+        "a faint high-pitched tone from the holographic projectors, "
+        "the occasional click and whir of a robotic arm repositioning, "
+        "the sealed environment creating a pressure in the ears — the sound of absolute sterility"),
+
+    "🌌 Mars research base — red dust": (
+        "interior of a pressurised dome on Mars, curved transparent ceiling panels revealing "
+        "a rust-red landscape of low ridges and dust under a butterscotch sky, "
+        "monitoring equipment banked along the perimeter walls with status lights blinking, "
+        "a central work area with geological samples in sealed containers, "
+        "dust coating the lower edges of every window despite air filtration, "
+        "a pressure suit hanging on a rack near the airlock door, helmet visor reflecting the room",
+        "filtered Martian daylight entering through the dome — a diffused amber-pink, "
+        "supplemented by cool white interior LEDs on adjustable arms at each workstation, "
+        "the red dust on the windows tinting all natural light with a warm ochre cast, "
+        "status LEDs adding small points of green, amber, and red across the equipment banks",
+        "the constant background hum of life-support systems — air recyclers, pressure regulators, "
+        "a rhythmic clicking from a radiation monitor near the airlock, "
+        "wind-blown dust ticking against the dome panels in irregular bursts, "
+        "the muffled howl of a Martian wind audible as a low-frequency vibration through the structure"),
+
+    # ── SPORTS ──────────────────────────────────────────────────────────
+    "🥊 Boxing ring — under spotlights": (
+        "professional boxing ring seen from just outside the ropes at canvas level, "
+        "white canvas marked with scuffs, resin dust, and faint stains from previous bouts, "
+        "four corner posts with turnbuckle pads in red and blue, "
+        "three ropes on each side catching the overhead light in parallel lines, "
+        "the crowd beyond the ring visible only as a dark mass of silhouettes and occasional camera flashes, "
+        "a ring-side bell and water bucket visible in the nearest corner",
+        "hard overhead spotlights from a lighting rig directly above the ring, "
+        "creating intense top-down illumination with sharp shadows beneath the ropes and corner posts, "
+        "the canvas blazing white under the lights while everything beyond the ring falls to near-black, "
+        "the geometric pattern of rope shadows crossing the canvas in parallel stripes",
+        "crowd noise — a constant roar rising and falling with the action, "
+        "the sharp slap of leather on skin, heavy breathing and the shuffle of feet on canvas, "
+        "a cornerman shouting instructions between the ropes, "
+        "the ring-side bell cutting through everything with a single clean metallic tone"),
+
+    "🏀 Basketball court — arena floodlights": (
+        "basketball court from floor level looking across the polished hardwood, "
+        "clear painted lines — three-point arc, free-throw lane, centre circle — in sharp focus, "
+        "the glossy floor reflecting the overhead arena lights in long stretched highlights, "
+        "a hoop and backboard at the far end catching the floodlights with a white flare on the glass, "
+        "player bench and scorer's table along the sideline, bleachers rising into shadow beyond",
+        "high-intensity arena floodlights from above creating bright even illumination across the court, "
+        "the polished wood floor acting as a massive reflector doubling the light, "
+        "the bleachers falling into graduated shadow the higher they rise, "
+        "scoreboards and sponsor signage providing secondary coloured light from the perimeter",
+        "sneakers squeaking on the polished floor in sharp staccato bursts, "
+        "the hollow bounce of a basketball on hardwood echoing through the space, "
+        "crowd noise swelling from the upper tiers, a whistle blast cutting clean through the din, "
+        "the metallic rattle of a ball hitting the rim and the swish of net on a clean shot"),
+
+    # ── MEDICAL / PROFESSIONAL ──────────────────────────────────────────
+    "🔬 Operating theatre — clinical white": (
+        "surgical operating theatre viewed from the foot of the table, "
+        "stainless steel instrument trays on wheeled stands flanking the operating table, "
+        "monitors mounted on articulated arms displaying vital signs in green and amber traces, "
+        "tiled floor with a central drain, walls in pale institutional green, "
+        "an anaesthesia machine with its coiled tubing at the head of the table, "
+        "masked and gowned figures positioned around the table in practised formation",
+        "massive overhead surgical lights — multi-element LED arrays casting intense shadowless white "
+        "directly onto the operating field, the light so bright it bleaches colour from the drapes, "
+        "secondary ambient fluorescents providing cool fill to the rest of the room, "
+        "monitor screens adding small pools of green and amber glow to the nearest surfaces",
+        "the rhythmic beep of the heart monitor marking time, "
+        "the steady mechanical breath of the ventilator cycling in measured intervals, "
+        "quiet exchanges between surgeon and assistant — calm, clipped, technical, "
+        "the clink of a metal instrument placed back on the tray"),
+
+    "⚖ Courtroom — formal architecture": (
+        "wood-panelled courtroom with dark oak wainscoting and moulding on every surface, "
+        "the judge's bench elevated on a platform at the front with a high-backed leather chair, "
+        "the witness stand to one side with its own small enclosure, jury box to the other "
+        "with two rows of upholstered seats, counsel tables facing the bench, "
+        "national and state flags flanking the bench, a court seal mounted on the wall above, "
+        "public gallery rows visible at the rear behind a low wooden barrier",
+        "overhead recessed fluorescents providing even institutional lighting, "
+        "supplemented by brass banker's lamps on the counsel tables casting warm downward pools, "
+        "tall windows on one wall with translucent shades softening daylight into flat white fill, "
+        "the overall palette formal and muted — dark wood, cream walls, brass fixtures",
+        "the acoustics of a formal room — every voice carrying clearly to every corner, "
+        "a gavel striking with a sharp authoritative crack, papers shuffling at the counsel table, "
+        "the court reporter's keys clicking in rapid quiet rhythm, "
+        "the creak of wooden seating as the gallery shifts and settles"),
+
+    # ── MUSIC ───────────────────────────────────────────────────────────
+    "🎙 Recording studio — glass booth": (
+        "recording studio isolation booth viewed from inside, "
+        "large double-paned glass window looking out to the control room where an engineer sits at a wide mixing console, "
+        "acoustic foam panels in charcoal grey covering every wall and the ceiling, "
+        "a condenser microphone on a boom arm with a pop filter positioned at mouth height, "
+        "a music stand with lyric sheets, closed-back headphones hanging from a wall hook, "
+        "cables taped to the floor running to a junction box in the corner",
+        "soft warm overhead lighting from recessed fixtures — deliberately even and non-harsh, "
+        "the control room beyond the glass lit cooler with the glow of console meters "
+        "and computer screens casting blue-white on the engineer's face, "
+        "LED status lights on rack-mounted equipment visible through the glass in amber and green columns",
+        "near-total silence inside the booth — the foam absorbing everything, "
+        "the faint bleed of a click track from the headphones when no one is wearing them, "
+        "the engineer's voice arriving through the talkback speaker — slightly compressed and tinny, "
+        "and the particular dead acoustic quality of a room designed to have no echo at all"),
+
+    "🎵 Concert hall — empty stage": (
+        "grand concert hall viewed from the centre stalls looking toward an empty stage, "
+        "soaring ceiling with ornate plasterwork and a central chandelier, "
+        "tiered balconies on three sides with gilded railings and carved caryatids, "
+        "rows of red velvet seats receding in gentle curves, a black Steinway grand piano "
+        "alone on the stage with its lid raised, the polished surface catching the spotlight, "
+        "golden ornamental details on every surface — cornices, pilasters, proscenium arch",
+        "a single dramatic spotlight illuminating the piano on the otherwise dark stage, "
+        "the chandelier on a low warm setting providing soft ambient fill to the auditorium, "
+        "the balcony fronts catching gilt highlights from the house lights, "
+        "deep shadow in the upper galleries and backstage areas beyond the proscenium",
+        "the extraordinary silence of a large empty hall — not dead silence but living silence, "
+        "the faintest hum of the ventilation system audible only because nothing else competes, "
+        "a creak from the stage boards as temperature changes the wood, "
+        "the acoustic potential of the space itself — every small sound blooming into a long natural reverb"),
+
+    # ── WEATHER EXTREMES ────────────────────────────────────────────────
+    "❄ Blizzard whiteout — visibility zero": (
+        "complete whiteout conditions in a blizzard, visibility reduced to three metres, "
+        "heavy snow driving horizontally on a sustained gale, "
+        "dark forms — trees, fence posts, a building corner — appearing and vanishing in the white, "
+        "the ground and sky indistinguishable, no horizon, no depth cues, total spatial disorientation, "
+        "snow accumulating on every surface and being stripped off again by the wind",
+        "no directional light — a flat featureless white-grey luminance from every direction at once, "
+        "objects losing all shadow and appearing as dark silhouettes with soft undefined edges, "
+        "the overall exposure blown out to near-white with only the closest dark objects registering, "
+        "any artificial light source — a window, a headlamp — surrounded by a bright halo of backscattered snow",
+        "wind as a wall of sound — a sustained roar with no pause and no variation in pitch, "
+        "snow hitting exposed skin or fabric in a continuous abrasive hiss, "
+        "all other sounds suppressed or distorted by the wind — a shout from ten feet away arriving muffled, "
+        "the creak and groan of structures flexing under wind load"),
+
+    "🌪 Tornado warning — green sky": (
+        "flat rural landscape under an approaching supercell, the sky a sickly green-yellow "
+        "casting unnatural light across fields and farmsteads, "
+        "a visible funnel cloud descending from the wall cloud on the western horizon, "
+        "debris visible at the base of the funnel — dark specks rotating upward, "
+        "loose objects on the ground beginning to shift and tumble in the building wind, "
+        "tree branches bending hard to one side, a screen door banging open and closed",
+        "the green-tinged light from the storm clouds replacing normal daylight with an alien palette, "
+        "no shadows — the overcast is total but the light has a strange intensity to it, "
+        "everything lit from within by an amber-green luminance that makes colours appear wrong, "
+        "distant lightning inside the cloud base illuminating the rotating structure from within",
+        "wind building from steady to gusting in increasing intensity, "
+        "a distant continuous roar from the tornado itself — often compared to a freight train, "
+        "objects clattering and banging — a trash can rolling across pavement, metal sheeting flexing, "
+        "emergency sirens wailing in long steady tones from the town behind, "
+        "and sudden pressure changes making the ears pop"),
+
+    # ── CULTURAL ────────────────────────────────────────────────────────
+    "🕌 Moroccan riad — courtyard silence": (
+        "interior courtyard of a traditional Moroccan riad, "
+        "zellige mosaic tiles covering the lower walls in intricate geometric patterns of blue, white, and green, "
+        "arched doorways on all four sides opening into shaded rooms beyond, "
+        "a central stone fountain with water trickling over a mosaic basin, "
+        "potted orange trees and jasmine in glazed ceramic pots flanking the fountain, "
+        "carved stucco panels above the tile line, warm earth-toned plaster on the upper walls",
+        "soft diffused daylight entering from the open sky directly above the courtyard, "
+        "the high walls filtering and bouncing the light so it arrives even and shadowless at ground level, "
+        "the tiles reflecting cool blue-green tones upward while the plaster walls return warm ochre, "
+        "the shaded archways appearing dark by contrast with the bright central courtyard",
+        "water from the central fountain — a continuous gentle trickling over smooth stone, "
+        "birdsong from above echoing down the courtyard walls, "
+        "the call to prayer arriving faintly from a distant minaret, muffled by the riad walls, "
+        "a deep ambient quiet — the courtyard designed as a refuge from the medina noise outside"),
+
+    "🛕 Indian temple — incense and sandstone": (
+        "ornate sandstone temple interior, massive carved pillars rising to a ceiling "
+        "covered in sculptural relief depicting mythological scenes, "
+        "incense smoke rising in slow spirals from brass holders in wall alcoves, "
+        "flower garlands in marigold orange and jasmine white draped over lintels and around pillars, "
+        "small oil lamps — diyas — flickering in carved stone niches along the walls, "
+        "the floor worn smooth by centuries of bare feet, cool stone underfoot",
+        "shafts of daylight entering through narrow openings high in the walls, "
+        "the light catching incense smoke and becoming visible as solid golden beams cutting the dim interior, "
+        "oil lamps providing warm orange point-light sources at regular intervals along the walls, "
+        "the overall palette warm sandstone gold and deep shadow with smoke-diffused edges",
+        "temple bells ringing in irregular patterns — some deep and sustained, some small and bright, "
+        "devotional chanting in a low resonant drone from an inner sanctum, "
+        "the specific acoustic of carved stone — every sound gaining a complex reverb, "
+        "incense crackling faintly as it burns, bare feet on stone, "
+        "and the flutter of pigeons in the upper reaches of the ceiling"),
+
+    "🦇 Limestone cave — stalactite cathedral": (
+        "large underground limestone chamber with a cathedral-like vaulted ceiling, "
+        "stalactites descending in dense clusters — some needle-thin, some massive columns "
+        "where they have met stalagmites rising from the floor to form pillars, "
+        "mineral deposits creating flowing curtain formations along the walls in amber and white, "
+        "a still pool of water on the chamber floor reflecting the ceiling formations perfectly, "
+        "the scale enormous — the far wall barely visible in the gloom",
+        "a single lantern or torch providing warm directional light from one side, "
+        "the light catching mineral deposits and wet surfaces in bright specular highlights, "
+        "deep shadow filling the far reaches of the chamber and the spaces between formations, "
+        "the water pool acting as a mirror doubling every light source from below",
+        "dripping water — the primary sound — each drop a distinct note echoing through the chamber "
+        "with a reverb tail lasting several seconds, "
+        "the hollow resonance of the space amplifying every small sound into something immense, "
+        "a faint underground stream audible from a passage leading deeper, "
+        "and the total absence of wind — the air perfectly still and cool"),
+
+    # ── SEASONAL ────────────────────────────────────────────────────────
+    "🍂 Autumn forest — golden canopy": (
+        "forest at peak autumn colour, the canopy a layered mosaic of amber, crimson, and burnished gold, "
+        "warm light filtering through translucent leaves casting the entire forest floor in a golden wash, "
+        "fallen leaves ankle-deep on the narrow path, damp and compacted beneath, dry and curling on top, "
+        "mushrooms and bracket fungi growing on fallen logs and exposed roots, "
+        "a spider web between two branches catching the light in a perfect geometric pattern, "
+        "cool air carrying the sharp sweet smell of decomposing leaves",
+        "warm diffused light filtering through the coloured canopy — amber and gold dominant, "
+        "occasional shafts of direct sun breaking through gaps to create bright pools on the forest floor, "
+        "the overall palette saturated warm — every surface tinted by the canopy filter, "
+        "long soft shadows from the tree trunks with warm-toned fill from reflected leaf light",
+        "leaves falling in slow irregular spirals, each one audible as a faint tick on landing, "
+        "a breeze moving through the canopy creating a dry rustling like distant applause, "
+        "a woodpecker drumming on a dead trunk in measured bursts, "
+        "the crunch of leaves underfoot and the particular silence of a forest in autumn — "
+        "fewer birds, fewer insects, the year winding down"),
+
+    "🏔 Winter cabin — firelight": (
+        "log cabin interior in deep winter, rough-hewn timber walls with white chinking between the logs, "
+        "a large stone fireplace dominating one wall with a substantial fire burning in it, "
+        "heavy wool blankets and fur throws draped over a deep armchair and a wooden bench, "
+        "frost patterns crystallised on the inside of small-paned windows, "
+        "snow visible outside through the glass — deep, blue-white, and still, "
+        "a kettle on an iron hook near the fire, bookshelves built into the wall beside the chimney",
+        "the fireplace as the primary light source — warm flickering orange filling the room unevenly, "
+        "shadows dancing on the ceiling and walls with every shift of the flames, "
+        "the windows admitting a cold blue-white ambient from the snow outside "
+        "creating a strong warm-cool contrast between the fire side and the window side of the room",
+        "the fire — crackling, popping, the occasional hiss of sap in a log, "
+        "a settling shift as a log breaks and drops in the grate, "
+        "wind outside audible as a low moan around the eaves and chimney, "
+        "the tick of contracting wood in the cabin frame as the temperature drops, "
+        "and deep snow silence pressing in from every direction outside the walls"),
 }
 
 
@@ -1469,6 +1800,430 @@ ANIMATION_PRESETS = {
         ],
         "tone": "dark sci-fi comedy, existential nihilism with emotional undercurrent that breaks through unexpectedly, rapid-fire dialogue rewarding attention, gross-out body horror as casual background detail, the show aware of its own cynicism",
     },
+
+    "Studio Ghibli": {
+        "style_tag": "Studio Ghibli animation, Miyazaki hand-painted dreamlike style, watercolour textures with visible brushstrokes, lush pastoral and magical settings, soft diffused lighting",
+        "characters": {
+            "Chihiro": "ten-year-old Japanese girl, short brown hair with a purple hair tie, white and green striped shirt, red shorts, determined wide eyes, small frame moving through a world too large for her, spirit world worker uniform later: white top and baggy pink pants",
+            "Totoro": "enormous grey forest spirit, round soft belly, pointed ears, wide toothy grin, tiny nose, whiskers, leaf on head in the rain, can only be seen by children, silent except for a deep rumbling roar",
+            "Howl": "tall young wizard, sharp pale face, bright blue eyes, flowing blond hair that changes to black when distressed, jewelled earrings, extravagant jacket over loose shirt, vain and dramatic but genuinely kind",
+            "Sophie": "young woman aged into an elderly body by a curse, silver hair in a bun, plain blue dress and apron, hunched posture that straightens as confidence grows, warm knowing eyes regardless of her apparent age",
+            "San": "feral wolf-girl, dark hair, red triangular face paint, white fur cape and hood, crystal dagger, fierce scowl, raised by wolf gods, moves on all fours when running with her wolf siblings",
+            "Kiki": "thirteen-year-old witch, large red bow in short dark hair, dark purple dress, broomstick always nearby, black cat Jiji on her shoulder, earnest and independent, learning to fly on her own",
+        },
+        "locations": [
+            "Bathhouse — enormous traditional Japanese bathhouse rising from still water, red and gold lacquered wood, hundreds of paper lanterns glowing at night, steaming open-air pools, wooden walkways over dark water, spirit guests of every shape drifting through corridors, Yubaba office at the very top with enormous ornate doors",
+            "Forest Spirit realm — ancient cedar forest with moss covering every surface, dappled green light filtering through canopy, kodama tree spirits clicking their heads in the branches, a still sacred pool reflecting the sky, enormous roots forming natural archways, the air thick with pollen and floating seeds",
+            "Moving Castle — impossible mechanical assemblage of turrets chimneys and legs, clanking and hissing steam as it walks across flower-covered hills, interior larger than exterior with cluttered wizard workshop, Calcifer the fire demon in the hearth, a door that opens to four different places depending on the dial",
+            "Laputa floating city — ancient overgrown sky fortress above the clouds, crumbling stone walls overtaken by enormous tree roots, a central crystal powering everything, robot guardians covered in moss tending gardens, wind blowing through empty corridors, clouds drifting through broken windows",
+            "Kiki bakery — small European seaside bakery with a bell above the door, flour-dusted counter, warm bread smell, Kiki delivery broomstick leaning by the entrance, upstairs attic bedroom with ocean view, cobblestone street outside with bicycles and flower boxes",
+        ],
+        "tone": "gentle wonder, environmental reverence, coming-of-age journeys, hand-painted warmth in every frame, quiet moments given as much weight as dramatic ones, nature as living presence",
+    },
+
+    "Dragon Ball Z": {
+        "style_tag": "Dragon Ball Z animation, 90s Toei anime action style, bold black outlines, high saturation colours, speed lines radiating from impacts, dramatic power-up auras, screaming transformation sequences",
+        "characters": {
+            "Goku": "muscular Saiyan warrior, wild spiky black hair that turns golden when Super Saiyan, orange gi with blue undershirt and belt, blue wristbands and boots, cheerful innocent face that hardens in battle, tail scar on lower back",
+            "Vegeta": "shorter but powerfully built Saiyan prince, sharp widow's peak black hair standing straight up, blue bodysuit under white Saiyan armour with gold trim, perpetual scowl, white-gloved fists clenched, royal arrogance in every gesture",
+            "Frieza": "small pale alien tyrant, purple and white bio-armour skin, long tail, red eyes, black lips curled into a smirk, hovering in his pod or standing with hands clasped behind his back, multiple transformation forms each more terrifying",
+            "Gohan": "Goku young son, bowl-cut black hair, purple gi or Piccolo-style training outfit, enormous hidden power that erupts under emotional duress, gentle scholar personality that hides the strongest fighter",
+            "Piccolo": "tall green Namekian, pointed ears, antennae, pink muscle patches on arms, white turban and weighted cape he removes before serious fights, stoic mentor figure, arms crossed, meditating while floating",
+            "Cell": "green and black bio-android, segmented exoskeleton, spotted pattern, wings in perfect form, long tail with stinger, arrogant smirk, black pupils in pink eyes, combines traits of all fighters",
+        },
+        "locations": [
+            "World Tournament arena — raised stone fighting platform in open stadium, enormous crowd in circular stands, tournament announcer at ringside, cracked tiles from previous impacts, blue sky above, fighter waiting area behind stone walls",
+            "Planet Namek — alien world with green sky and blue-green grass, three suns casting multiple shadows, Namekian villages of round white buildings, dragon balls scattered across the landscape, enormous craters from battles scarring the terrain",
+            "Hyperbolic Time Chamber — infinite white void with a small living quarters at the entrance platform, time flows differently inside, featureless horizon in every direction, extreme gravity and temperature shifts, a year inside equals one day outside",
+            "West City — futuristic metropolis with capsule-shaped buildings, flying cars, Capsule Corporation dome headquarters with the company logo, Dr. Briefs laboratory inside, Vegeta gravity training room glowing red through its windows",
+            "Kami Lookout — circular platform floating high above Earth, white tiled floor, palm trees in ornamental pots, entrance to the Hyperbolic Time Chamber, Mr. Popo tending the gardens, panoramic view of the world curving below through clouds",
+        ],
+        "tone": "escalating power levels, dramatic transformation sequences with screaming and lightning, friendship and rivalry driving every fight, five-minute battles lasting ten episodes, the spirit bomb always takes too long to charge",
+    },
+
+    "Naruto": {
+        "style_tag": "Naruto anime animation, Studio Pierrot style, dynamic ninja combat, hand-sign jutsu sequences, forehead protector insignias, bold action lines, leaf motifs",
+        "characters": {
+            "Naruto": "blond spiky hair, bright blue eyes, orange and black jumpsuit with red spiral on the back, whisker marks on both cheeks from the Nine-Tailed Fox sealed within, leaf village forehead protector, determined grin, shadow clone jutsu hand signs",
+            "Sasuke": "pale skin, dark spiky hair with bangs framing his face, dark eyes that shift to red Sharingan with spinning tomoe, high-collared blue shirt with Uchiha fan crest on the back, white arm wrappings, brooding and intense",
+            "Kakashi": "tall lean jonin, spiky silver hair defying gravity, leaf headband tilted over left Sharingan eye, black mask covering nose and mouth, green flak jacket, gloved hands, always reading an orange book, relaxed posture hiding lethal skill",
+            "Sakura": "pink hair to her shoulders, green eyes, red qipao-style dress over black shorts, forehead protector worn as headband, gloves for chakra-enhanced punches, medical ninja pouch at her hip, determined expression",
+            "Itachi": "long black hair tied in a low ponytail, pronounced tear-trough lines under Sharingan eyes, black cloak with red cloud pattern of the Akatsuki, scratched-through leaf headband, calm emotionless face hiding enormous grief",
+            "Jiraiya": "tall and broad, long spiky white hair falling past his waist, red lines running from eyes down cheeks, green short kimono over mesh armour, wooden sandals, horned forehead protector with the kanji for oil, toad summoner, boisterous laugh",
+        },
+        "locations": [
+            "Hidden Leaf Village — sprawling ninja village nestled in dense forest, Hokage Rock carved with the faces of past leaders overlooking rooftops, Ichiraku Ramen stand with cloth banners, Academy training grounds, rooftop paths between buildings, the great gates with leaf symbol",
+            "Forest of Death — enormous ancient trees creating perpetual twilight at ground level, oversized insects and predators, wire-trap training ground for the Chunin Exams, tower at the centre as the goal, treacherous undergrowth, rivers cutting through roots",
+            "Hokage office — circular room at the top of the administrative building, wide windows overlooking the village, Hokage desk piled with mission scrolls, portraits of all Hokage on the wall, ANBU guards hidden in the shadows",
+            "Valley of the End — enormous waterfall between two massive stone statues of Madara and Hashirama facing each other across the river, mist rising from the falls, a place where destinies collide, cracked and battle-scarred cliff faces",
+            "Akatsuki hideout — dark cavernous space lit by the ghostly projections of members standing on the fingertips of an enormous sealed statue, red cloud cloaks in shadow, the sealing jutsu in progress, echoing voices in the dark",
+        ],
+        "tone": "ninja combat with hand signs and jutsu names called out, bonds of friendship tested by betrayal, village loyalty as identity, dramatic jutsu sequences with elemental effects, the will of fire passed between generations",
+    },
+
+    "Attack on Titan": {
+        "style_tag": "Attack on Titan animation, WIT Studio and MAPPA dark anime style, gothic medieval European setting, vertical maneuvering gear wire-action sequences, colossal scale contrasts between humans and Titans",
+        "characters": {
+            "Eren": "intense green eyes, dark brown hair falling to his jaw, Survey Corps brown jacket with overlapping sword insignia over white shirt and belted trousers, ODM gear harnesses strapped to thighs and waist, jaw clenched with barely contained rage, key necklace from his father",
+            "Mikasa": "short black hair with longer strands framing her face, dark calm eyes, red scarf wrapped around her neck at all times, Survey Corps uniform worn with effortless combat readiness, lean muscular build, expressionless face that softens only for Eren",
+            "Levi": "short stature but terrifyingly lethal, undercut black hair, narrow grey eyes permanently unimpressed, Survey Corps captain cloak over immaculate uniform, cravat at his throat, ODM blades held in reverse grip, humanity's strongest soldier",
+            "Armin": "blond bowl-cut hair, large blue eyes, slight build, Survey Corps uniform that looks too big for him, strategic genius hiding behind a timid exterior, carries books and maps, voice of reason in chaos",
+            "Annie": "blonde hair pulled back with a piece falling over her right eye, pale blue eyes, hooded sweatshirt under Military Police jacket, crystal-like fighting stance, cold detached expression, rarely speaks unless necessary",
+            "Erwin": "tall commanding presence, blond hair parted and combed back, thick eyebrows, piercing blue eyes, Survey Corps commander cloak billowing, missing right arm later replaced with nothing, leads charges from the front",
+        },
+        "locations": [
+            "Wall Maria — fifty-metre stone wall stretching to the horizon in both directions, garrison cannons mounted on top at intervals, the breach where the Colossal Titan kicked through, refugee camps inside the inner gate, farmland and abandoned towns in the shadow of the wall",
+            "Shiganshina District — walled town protruding from Wall Maria, cobblestone streets, half-timbered European houses with red roofs, the outer gate smashed open, Titan footprints cratering the streets, Eren childhood home half-collapsed",
+            "Survey Corps HQ — stone fortress in open countryside, stables for horses, mess hall with long wooden tables, strategy room with enormous wall maps, training grounds with ODM practice poles and wire courses, torchlit corridors at night",
+            "Titan Forest — enormous sequoia-scale trees with trunks wider than buildings, canopy blocking the sky, ODM gear anchor points everywhere in the bark, Titans wandering between the trunks at ground level, Survey Corps using the height advantage",
+            "Underground city — vast cavern beneath the capital, shanty town built in perpetual darkness, gas-lamp light, criminal underworld, dripping stalactites, where Levi grew up, poverty and desperation in sharp contrast to the surface",
+        ],
+        "tone": "survival horror against impossible odds, military camaraderie forged in shared terror, the walls as both protection and prison, freedom versus safety as the central tension, betrayal from within, the cost of learning the truth",
+    },
+
+    "Neon Genesis Evangelion": {
+        "style_tag": "Neon Genesis Evangelion animation, Gainax and Studio Khara style, mecha dystopia meets psychological horror, harsh angular designs, unsettling colour palettes shifting from clinical to apocalyptic",
+        "characters": {
+            "Shinji": "fourteen-year-old boy, dark brown hair, pale skin, school uniform or white plugsuit with blue accents, SDAT cassette player with earbuds as emotional shield, hunched shoulders, avoids eye contact, reluctant pilot who just wants approval",
+            "Asuka": "fiery red hair held with neural interface clips, bright blue eyes, confident aggressive posture, red plugsuit, speaks German when emotional, bravado masking deep insecurity and need for validation, competitive with everyone especially Shinji",
+            "Rei": "pale blue hair cut short, red eyes, bandages on one arm or face, white plugsuit or school uniform, speaks in flat monotone, sits by the window staring at nothing, unsettling calm, connected to something no one will explain",
+            "Misato": "long purple hair, red jacket over black dress, cross necklace, beer cans everywhere in her apartment, Operations Director who is also a chaotic guardian, warm and reckless in equal measure, hides deep trauma behind cheerfulness",
+            "Gendo": "dark hair, orange-tinted glasses hiding his eyes, white gloves, hands clasped in front of his face in the iconic pose, NERV commander uniform, cold and calculating, every action in service of a secret plan, worst father in anime",
+            "Kaworu": "grey hair, red eyes, pale skin, serene smile, school uniform or white plugsuit, moves with unnatural grace, speaks about love and humanity with eerie directness, the only person who tells Shinji he is worthy of love",
+        },
+        "locations": [
+            "Tokyo-3 — fortress city that retracts its buildings underground when Angels attack, empty streets with cicada sounds, apartment blocks and convenience stores that feel too normal for what happens here, armour plates sliding over the city surface during battle",
+            "NERV headquarters — enormous underground complex beneath Tokyo-3, the Geofront visible through windows as an impossible underground cavern with a lake and forest, command centre with holographic displays, Gendo overlooking operations from above, sterile corridors that go on forever",
+            "Entry Plug interior — cylindrical cockpit filled with LCL liquid that the pilot breathes, neural interface headset, control yokes, holographic displays surrounding the pilot, the feeling of being swallowed by the Eva, orange fluid filling the screen",
+            "Terminal Dogma — the deepest level of NERV, enormous white crucified figure pinned to a red cross with a lance through its chest, LCL pooling beneath, the truth that no one is supposed to see, sterile white walls splattered with secrets",
+            "Geofront — massive spherical cavern beneath the city, an artificial sky with its own weather, a pristine lake surrounded by forest, NERV pyramid headquarters at the centre, a paradise built on top of something terrible",
+        ],
+        "tone": "existential dread wrapped in mecha action, psychological trauma explored without resolution, religious symbolism layered over science fiction, characters unable to connect despite desperate need, the robots might be alive and that is the least disturbing thing",
+    },
+
+    "Adventure Time": {
+        "style_tag": "Adventure Time animation, Cartoon Network hand-drawn storybook style, soft rounded character designs, post-apocalyptic candy-coloured fantasy landscapes, pastel palette with moments of visual darkness",
+        "characters": {
+            "Finn": "human boy in white bear-ear hat hiding long blond hair, blue shirt and shorts, green backpack, missing arm later replaced with various prosthetics, wide eyes full of heroic determination, the last human in the Land of Ooo",
+            "Jake": "orange bulldog with magical stretching powers, can become any shape or size, laid-back half-closed eyes, jowly face, speaks in a relaxed baritone, often becomes a boat or bridge or parachute for Finn",
+            "Princess Bubblegum": "tall pink woman made of bubblegum, pink hair in a tall updo, lab coat over royal dress, crown, genius scientist who rules the Candy Kingdom, centuries older than she appears, morally grey decisions for her people",
+            "Marceline": "grey-skinned vampire queen, long black hair floating around her, puncture marks on her neck, bass guitar axe weapon, red boots, flannel shirt, floats instead of walks, thousand years of emotional baggage, eats the colour red not blood",
+            "Ice King": "blue skin, long white beard that gives him flight, golden crown that stole his sanity, blue robes, hooked nose, sad lonely wizard who was once a kind human named Simon, kidnaps princesses for company",
+            "BMO": "small teal living video game console, screen face displaying simple dot eyes and mouth, stubby arms and legs, button controls on front, speaks in a childlike voice, lives with Finn and Jake, plays both games and pretend",
+        },
+        "locations": [
+            "Tree Fort — Finn and Jake home, an enormous oak tree converted into a multi-level house, ladder entrance, living room with BMO on the floor, kitchen, treasure room, rooftop with a telescope, surrounded by grassy fields in the Land of Ooo",
+            "Candy Kingdom — entire kingdom made of candy: gumdrop citizens, peppermint butler, candy cane lampposts, Bubblegum castle of pink sugar with laboratory inside, banana guards at the gates, sweet smell implied in every frame",
+            "Ice Kingdom — frozen mountain realm, Ice King castle of jagged ice, penguins everywhere including Gunter, frozen prison cells for kidnapped princesses, drum kit where Ice King practices, cold blue palette",
+            "Nightosphere — Marceline father dimension, a hellish red landscape ruled by her demon dad Hunson Abadeer, fire and chaos, souls wandering, portal opened by dousing a face in bug milk and reciting an incantation",
+            "Lumpy Space — purple cloud dimension floating in space, lumpy purple inhabitants who speak in Valley Girl dialect, Lumpy Space Princess parents house, drama and gossip as the primary activity, accessible through a frog on a mushroom",
+        ],
+        "tone": "whimsical adventure hiding genuine darkness underneath, post-apocalyptic world played as colourful fantasy, surreal dreamlike episodes that shift tone without warning, deep emotional moments earned through silly setup, everyone is damaged and trying their best",
+    },
+
+    "Gravity Falls": {
+        "style_tag": "Gravity Falls animation, Disney XD style, creepy Pacific Northwest suburban mystery, warm pine-forest colour palette punctuated by supernatural neon glows, journal sketch aesthetic",
+        "characters": {
+            "Dipper": "twelve-year-old boy, brown hair under a blue and white pine tree trucker cap, orange-red shirt, blue vest, shorts, always carrying Journal 3 with the gold six-fingered hand on the cover, paranoid but usually right, black light pen in his vest pocket",
+            "Mabel": "twelve-year-old twin sister, long brown hair with a headband, braces on her teeth, handmade sweater with a different design every episode (shooting star, cat face, rainbow), skirt, boundless optimism and a grappling hook she uses for everything",
+            "Grunkle Stan": "elderly conman, square jaw, five-o-clock shadow, fez hat with a crescent symbol, black suit jacket over white shirt, eye patch occasionally, runs the Mystery Shack tourist trap, gruff exterior hiding a broken heart and a secret in the basement",
+            "Bill Cipher": "two-dimensional yellow triangle with a single eye, top hat, bow tie, thin black limbs, floats and spins, speaks in a manic echoing voice, reality-warping dream demon, makes deals that always cost more than promised, REMEMBER REALITY IS AN ILLUSION",
+            "Soos": "heavyset handyman, green shirt with a question mark, brown cap, round face with a kind smile, endlessly loyal to the Pines family, believes everything supernatural immediately, fixes things with duct tape",
+            "Wendy": "tall redheaded teenager, flannel shirt, lumberjack hat, muddy boots, cool and laid-back, works the Mystery Shack register, Dipper has a hopeless crush on her, surprisingly capable in a crisis, axe-wielding when needed",
+        },
+        "locations": [
+            "Mystery Shack — ramshackle tourist trap in the Oregon woods, tilted sign on the roof with the S fallen off, gift shop full of fake oddities, living quarters upstairs, the vending machine that hides the elevator to the secret underground laboratory, totem pole out front, forest pressing in from all sides",
+            "Gravity Falls forest — dense Pacific Northwest pine forest, unnaturally quiet, gnomes hiding behind every tree, bottomless pit somewhere in a clearing, manotaurs in a cave, the branches forming shapes that look like watching faces, fog rolling between the trunks at dusk",
+            "Underground bunker — hidden fallout shelter beneath the forest, accessible through a tree stump, walls covered in research notes and newspaper clippings, cryogenic pods, the Author workspace, flickering fluorescent lights, decades of paranoid investigation preserved",
+            "Mindscape — surreal dreamworld accessible through Bill Cipher, grey-scale real world with floating objects, doors leading to memories, the dreamer vulnerable to manipulation, Bill Cipher in his element here, geometry bending and eyes everywhere",
+            "Town square — small-town Gravity Falls centre, greasy diner, arcade, library with a hidden section, suspicious townsfolk going about their day, the statue that no one notices is Bill Cipher, Northwest Manor visible on the hill above town",
+        ],
+        "tone": "mystery solving with actual stakes, supernatural horror mixed with genuine comedy, the twin bond as emotional anchor, conspiracies that go deeper than expected, a town where everyone has a secret and some secrets have teeth",
+    },
+
+    "Futurama": {
+        "style_tag": "Futurama animation, Matt Groening style for Comedy Central and Hulu, retro-futuristic sci-fi 2D cartoon, clean bold outlines, vibrant saturated colours, 31st century technology with 20th century sensibility",
+        "characters": {
+            "Fry": "red-haired delivery boy from the year 2000, frozen for 1000 years, red jacket over white t-shirt, blue jeans, sneakers, perpetually confused but good-hearted, not smart but occasionally profound by accident, carries a can of Slurm",
+            "Leela": "one-eyed mutant woman, single large purple eye, long purple ponytail, white tank top, grey leggings, wrist communicator, black boots, the only competent person at Planet Express, karate kicks first asks questions later",
+            "Bender": "shiny grey bending robot, cylindrical body, antenna on head, cigar in mouth, arms that extend impossibly, chest door hiding stolen goods, drinks alcohol for fuel, obnoxious selfish and somehow lovable, Bite my shiny metal ass",
+            "Professor Farnsworth": "ancient bald scientist, thick round glasses, lab coat, hunched posture, slippers, inventor of dangerous things, Good news everyone always precedes terrible news, 160 years old and it shows",
+            "Zoidberg": "red lobster-like alien, lab coat, the company doctor who knows nothing about human anatomy, poor and hungry, lives in a dumpster, desperately wants friends, wooping noise when scared",
+            "Amy": "young Chinese-Martian woman, short black hair, pink sweatsuit or various trendy outfits, wealthy parents who own half of Mars, klutzy, engineering student, speaks in future slang",
+        },
+        "locations": [
+            "Planet Express building — crumbling green building in New New York, rooftop landing pad for the ship, main office with conference table, Professor laboratory full of dangerous inventions, hangar bay, Bender apartment closet, the balcony overlooking the city, a fading company that somehow never closes",
+            "New New York — 31st century Manhattan built on top of the ruins of old New York, transparent tubes people travel through, flying cars, alien immigrants on every corner, Madison Cube Garden, Robot Arms Apartments, Head Museum with celebrity heads in jars",
+            "Robot Arms Apartments — Bender tiny apartment, barely fits a shelf and a closet, closet is where Fry sleeps, antenna on roof, robot neighbours through thin walls, the kind of place that accepts robots no questions asked",
+            "Omicron Persei 8 — alien planet ruled by Lrrr who is obsessed with 20th century Earth television, palace throne room with a big screen TV, angry alien populace, the planet that keeps threatening to invade Earth over cancelled sitcoms",
+        ],
+        "tone": "sci-fi satire of the present disguised as the future, workplace comedy where the workplace is a spaceship, absurd future technology played completely straight, genuine heart hiding under layers of cynicism, the saddest episodes sneak up on you",
+    },
+
+    "Archer": {
+        "style_tag": "Archer animation, Floyd County Productions style, retro spy aesthetic with 1960s mod design, flat colour illustration with crisp vector lines, mid-century modern interiors, noir lighting with saturated colour pops",
+        "characters": {
+            "Sterling Archer": "tall dark-haired man in a slim-fit black turtleneck or tailored grey suit, strong jaw, smug expression, cocktail glass almost always in hand, shoulder holster with Walther PPK, impossibly vain, tactleneck enthusiast, world's most dangerous spy and worst coworker",
+            "Lana Kane": "tall athletic woman, long black hair, green eyes, black tactical turtleneck, cargo pants, enormous hands she is sensitive about, dual-wielding TEC-9s, the only genuinely competent field agent, perpetually exasperated",
+            "Malory Archer": "elegantly dressed older woman, pearl necklace, martini glass as permanent accessory, fur stole, severe expression softened only by alcohol, intelligence agency director who runs the place like her personal fiefdom, Sterling overbearing mother",
+            "Cyril": "thin nervous man, glasses, grey suit, accountant for the agency, secretly desires fieldwork, terrible at it, Lana ex-boyfriend, HR violations in a cardigan",
+            "Pam": "heavyset blonde woman in a cardigan, HR director with a back tattoo of Byron, deceptively strong bare-knuckle fighter, eats constantly, knows everyone's secrets, drift racing champion, surprisingly the most capable in a crisis",
+            "Krieger": "lab coat over rumpled clothes, glasses, goatee, the agency mad scientist, questionable experiments in the basement, holographic anime girlfriend, may or may not be a Hitler clone, van with an airbrushed wizard mural",
+        },
+        "locations": [
+            "ISIS/FIGGIS Agency HQ — 1960s-style office building, bullpen with desks and old computers, Malory corner office with a wet bar, Krieger underground laboratory, armoury behind a vault door, break room where most arguments happen, the elevator everyone gets trapped in",
+            "Various international spy locations — Monte Carlo casino floor, Soviet-era Eastern European safe house, tropical villain compound, high-speed train through the Alps, rooftop in Tangier, each location rendered in mid-century travel poster aesthetic",
+            "Archer penthouse — sleek mid-century modern apartment, wet bar with top-shelf liquor, black leather furniture, framed photos of himself, a closet full of identical turtlenecks in slightly different shades of black, the breakfast nook where Woodhouse served eggs",
+        ],
+        "tone": "spy genre parody with workplace dysfunction comedy, cocktail culture and mid-century aesthetic, rapid-fire obscure references, running gags that span entire seasons, the characters are terrible people you cannot stop watching, danger zone",
+    },
+
+    "Invincible": {
+        "style_tag": "Invincible animation, Amazon adult superhero style, comic book aesthetic with thick outlines and flat bold colours that erupt into hyper-detailed ultraviolent impact frames, blood splatter as visual punctuation",
+        "characters": {
+            "Mark Grayson/Invincible": "teenage boy with dark hair, yellow and blue superhero suit with a stylised I on the chest, blue domino mask, cape, starts idealistic and clean-cut, suit and face increasingly damaged and bloodied as the series progresses, flying with fists forward",
+            "Omni-Man/Nolan": "imposing muscular man, thick dark moustache, red and white skintight suit with a circular O emblem, cape, hovers with arms crossed, looks like the perfect superhero father, the moustache of a man hiding something enormous",
+            "Atom Eve": "young woman with pink hair, pink and white superhero costume, ability to manipulate matter shown as glowing pink energy fields around her hands, caring expression, the most powerful person in the room who holds back out of conscience",
+            "Cecil": "bald man in a dark suit, scarred face, government handler, always in shadow or behind screens, cigarette, calm voice delivering terrible orders, pragmatic to the point of moral bankruptcy, never does the fighting himself",
+            "Rex Splode": "blond spiky hair, red and white costume, cocky grin, throws small objects that he charges with explosive energy, arrogant jock personality hiding genuine courage, the guy who talks big and occasionally backs it up",
+        },
+        "locations": [
+            "Suburban neighbourhood — quiet American suburb where the Grayson family lives, two-storey house with a lawn, the normalcy that makes the violence more shocking, Mark bedroom with posters on the walls, dinner table conversations about saving the world",
+            "Pentagon — government war room where Cecil operates, screens showing global threats, underground bunker aesthetic, fluorescent lighting on tired faces, the bureaucracy behind superhero management",
+            "Mount Rushmore base — secret headquarters inside the carved mountain, meeting room for the Guardians of the Globe, memorial wall for fallen heroes, training facilities, the base where the worst betrayal happens",
+            "Viltrumite warship — alien spacecraft interior, cold grey metal, circular architecture, Viltrumite warriors standing at attention, a civilisation built entirely around strength and conquest, the empire Mark is supposed to inherit",
+            "High school — ordinary American high school hallways, lockers, cafeteria, the mundane teenage life Mark tries to maintain between saving the world and getting beaten half to death, homework assignments contrasted with orbital combat",
+        ],
+        "tone": "brutal superhero violence with permanent consequences, coming-of-age under impossible pressure, betrayal from the people you trust most, the cost of power shown in broken bones and shattered trust, idealism tested to destruction",
+    },
+}
+
+
+# ══════════════════════════════════════════════════════════════════════════
+#  DIRECTOR STYLE PRESETS
+#  Each value: a paragraph of camera vocabulary, color palette, and
+#  composition rules inspired by the director's visual language.
+# ══════════════════════════════════════════════════════════════════════════
+DIRECTOR_PRESETS = {
+    "None": None,
+
+    "Stanley Kubrick": (
+        "Kubrick visual language: obsessive symmetry in every frame, one-point perspective "
+        "down long corridors and through doorways, cold clinical colour palette with occasional "
+        "saturated accent, wide-angle lens distortion at the edges, characters centred and small "
+        "against vast architectural geometry, static locked-off camera holding uncomfortably long, "
+        "top-light creating hard shadow under brows and cheekbones, practical light sources "
+        "motivated and visible in frame, the uncanny quality of spaces that feel designed to "
+        "observe rather than comfort."
+    ),
+
+    "Quentin Tarantino": (
+        "Tarantino visual language: bold saturated colour — blood red, chrome yellow, deep black, "
+        "long tracking shots following characters through spaces, trunk-shot low angle looking up "
+        "at characters framed against sky, extreme close-ups on eyes and hands during tension, "
+        "split-focus diopter creating sharp foreground and background simultaneously, warm 70s "
+        "film grain, practical neon and tungsten mixing in the same frame, Mexican standoff "
+        "framing with all parties visible, feet prominently framed, the camera as a character "
+        "that moves with confidence and occasionally stops to stare."
+    ),
+
+    "Wes Anderson": (
+        "Anderson visual language: perfect bilateral symmetry in every composition, flat frontal "
+        "camera angle perpendicular to every surface, pastel colour palette — powder pink, mint, "
+        "cream, mustard, powder blue — with every object in frame colour-coordinated, whip pans "
+        "between precisely composed tableaux, overhead top-down shots of hands and objects, "
+        "dollhouse framing with rooms cross-sectioned, characters positioned like figurines in a "
+        "diorama, practical warm tungsten light from visible fixtures, text and signage as "
+        "compositional elements, the entire frame functioning as a designed surface."
+    ),
+
+    "David Fincher": (
+        "Fincher visual language: desaturated cold colour palette — steel blue, sickly green, "
+        "muted amber — with crushed blacks and limited highlight range, impossibly precise camera "
+        "movement on tracks and cranes, slow methodical push-ins during dialogue, top-lit faces "
+        "with shadow pooling in eye sockets, industrial and institutional spaces shot to feel "
+        "claustrophobic, rain and wet surfaces reflecting every light source, the camera seeing "
+        "details the characters miss, digital precision with zero camera shake, negative space "
+        "weaponised to create tension."
+    ),
+
+    "Denis Villeneuve": (
+        "Villeneuve visual language: monumental scale — characters dwarfed by architecture and "
+        "landscape, extremely wide shots establishing vastness before cutting to intimate close-ups, "
+        "shallow depth of field isolating subjects against enormous soft backgrounds, muted "
+        "earth-tone palette with warm amber and cold grey-blue, haze and atmospheric particles "
+        "in every exterior, silence as a compositional element — long pauses where the frame "
+        "holds on nothing, slow deliberate camera movement that feels gravitational, natural "
+        "light sourced from the environment itself, the sublime quality of spaces too large for "
+        "human comprehension."
+    ),
+
+    "Christopher Nolan": (
+        "Nolan visual language: IMAX scope and scale, practical effects visible as real physics, "
+        "cross-cutting between timelines with matched camera movement, wide-angle establishing "
+        "shots that sell geography before action, hand-held urgency in action sequences cutting "
+        "to locked-off precision in dialogue, cool blue-grey palette with warm amber practicals, "
+        "the ticking-clock structure implied by editing rhythm, real locations over sets, "
+        "aerial shots establishing the world as a physical space, loud silence after loud sound."
+    ),
+
+    "Wong Kar-wai": (
+        "Wong Kar-wai visual language: step-printed slow motion that smears motion into colour, "
+        "neon reflections in rain-slicked surfaces — magenta, cyan, amber — saturated beyond "
+        "reality, shallow depth of field with foreground objects blurring into abstract colour, "
+        "characters framed through doorways, mirrors, and reflective glass, handheld camera "
+        "drifting at the speed of a held breath, expired Fuji film stock warmth with crushed "
+        "greens, clock imagery and calendar pages, the loneliness of two people in the same "
+        "narrow corridor, cigarette smoke as composition."
+    ),
+
+    "Steven Spielberg": (
+        "Spielberg visual language: warm golden light from low sources — practical lamps, "
+        "flashlights, firelight — creating pools of warmth in dark spaces, camera at child "
+        "eye-height looking up at wonder, lens flare from motivated light sources, silhouettes "
+        "against bright backlit doorways and windows, push-in on faces during moments of "
+        "realisation, the camera discovering things at the same moment as the character, "
+        "John Williams orchestral swell implied by the visual crescendo, soft diffused key "
+        "light on faces, Americana colour palette — warm wood, blue denim, green grass."
+    ),
+
+    "David Lynch": (
+        "Lynch visual language: the uncanny in the mundane — normal spaces shot with unsettling "
+        "stillness, industrial drone and hum underlying every scene, extreme darkness with small "
+        "pools of warm light that don't illuminate enough, red curtains and checkerboard floors, "
+        "static camera holding on a face or object far longer than comfortable, sudden cuts to "
+        "abstract imagery — fire, static, rotating lights, slow cross-dissolves between unrelated "
+        "spaces, fluorescent overhead creating flat institutional light, the camera seeing through "
+        "walls and time, colour grading that shifts between scenes without explanation."
+    ),
+}
+
+
+# ══════════════════════════════════════════════════════════════════════════
+#  GENRE PRESETS
+#  Each value: a paragraph of lighting vocabulary, pacing cues, and tonal
+#  language that shapes the prompt's emotional register.
+# ══════════════════════════════════════════════════════════════════════════
+GENRE_PRESETS = {
+    "None": None,
+
+    "Film Noir": (
+        "Film noir aesthetic: high-contrast chiaroscuro lighting with hard shadows from venetian "
+        "blinds, single practical light sources — desk lamp, street lamp, car headlights — "
+        "everything else in deep black, wet streets reflecting every light source in elongated "
+        "streaks, smoke and fog as atmospheric density, dutch angles for psychological unease, "
+        "low-key lighting with the face half-lit half-shadow, femme fatale framing with backlight "
+        "separating figure from dark background, black and white tonal range even in colour, "
+        "cynical urban night, the city as antagonist."
+    ),
+
+    "Horror": (
+        "Horror aesthetic: motivated practical lighting only — torch, candle, phone screen — "
+        "with deep darkness beyond the light's reach, camera positioned to hide more than it "
+        "reveals, negative space where threat exists unseen, shallow depth of field with "
+        "background soft enough to conceal, wide-angle distortion at frame edges, below-frame "
+        "lighting casting upward shadows on faces, colour palette desaturated except for red "
+        "as accent, slow creeping camera movement, the frame holding still when it should cut, "
+        "unsettling symmetry in organic spaces, sound design implying what the image withholds."
+    ),
+
+    "Romance": (
+        "Romance aesthetic: warm diffused light — golden hour, candle glow, fairy lights — "
+        "with soft bokeh filling backgrounds, shallow depth of field isolating two faces or "
+        "hands, warm colour palette of amber, rose, and soft cream, lens diffusion or pro-mist "
+        "creating a gentle glow on skin, close-ups on eyes, lips, hands touching, slow camera "
+        "drift toward subjects, backlight creating rim light on hair, reflections in water and "
+        "glass doubling intimate moments, the world beyond the couple softened into irrelevance, "
+        "warm practicals at face height."
+    ),
+
+    "Thriller": (
+        "Thriller aesthetic: tension through framing — subjects off-centre with negative space "
+        "where threat could enter, dutch angles increasing with stakes, cold desaturated palette "
+        "with steel blue and sickly fluorescent green, shallow focus rack between foreground "
+        "threat and background character, surveillance-style high angles and long lenses, "
+        "tight close-ups during confrontation, practical overhead lighting creating under-eye "
+        "shadow, the frame tightening as danger approaches, rhythmic cutting implied by "
+        "alternating shot scales."
+    ),
+
+    "Documentary": (
+        "Documentary aesthetic: handheld camera with natural shake and breathing, natural "
+        "available light with no artificial fill, subjects framed in their real environment "
+        "with context visible, interview framing with eye-line slightly off-camera, "
+        "observational distance — the camera present but not directing action, mixed colour "
+        "temperature from whatever sources exist in the space, the authenticity of imperfect "
+        "composition, real textures and wear, depth of field at whatever the available light "
+        "permits, the feeling of witnessing rather than staging."
+    ),
+
+    "Music Video": (
+        "Music video aesthetic: high-saturation colour with intentional colour grading shifts "
+        "between cuts — teal-orange, magenta-cyan, monochrome — smoke machines and haze "
+        "catching coloured light, strobes and practicals creating rhythmic light patterns, "
+        "slow-motion capturing fabric, hair, and liquid in mid-air, dynamic camera movement "
+        "matching musical energy, lens flares and light leaks as stylistic choice, "
+        "abstract insert shots of textures and colours between performance, the entire frame "
+        "as a designed surface prioritising visual impact over narrative clarity."
+    ),
+
+    "Action": (
+        "Action aesthetic: handheld urgency with dynamic tracking, quick dolly-ins on impact "
+        "moments, wide establishing shots selling geography then tight coverage during chaos, "
+        "high shutter speed freezing motion in sharp detail, practical pyrotechnics and debris, "
+        "warm fire tones contrasting cold steel-blue environment, low-angle hero shots, speed "
+        "ramping from full-speed to slow-motion on key impacts, camera absorbing shockwaves "
+        "and vibration, the geography of action always clear — who is where relative to whom."
+    ),
+
+    "Western": (
+        "Western aesthetic: anamorphic widescreen capturing vast empty landscape with a single "
+        "figure, harsh unforgiving midday sun with no fill light, bleached desaturated palette "
+        "of dust and dried earth, extreme wide shots followed by extreme close-ups on eyes "
+        "during standoff, warm amber light at golden hour, long shadows at dawn and dusk, "
+        "practical dust kicked up by boots and horses, the sound of silence as a presence, "
+        "the horizon always visible, two figures at opposite sides of frame with empty space "
+        "between them."
+    ),
+
+    "Sci-Fi": (
+        "Sci-fi aesthetic: clean geometric architecture at inhuman scale, cool blue-white "
+        "ambient from technology and screens, holographic displays casting moving coloured "
+        "light on faces, lens flares from bright point sources, reflective surfaces — glass, "
+        "chrome, water — doubling every light source, atmospheric haze in corridors, practical "
+        "LED strips as set dressing and light source simultaneously, the glow of buttons and "
+        "panels providing motivated fill light, stars or planetary bodies visible through "
+        "viewports as background light, the sterile beauty of designed spaces."
+    ),
+
+    "Fantasy": (
+        "Fantasy aesthetic: warm practicals — torchlight, candlelight, magical glow — in vast "
+        "dark spaces, volumetric light shafts through cathedral windows and forest canopy, "
+        "rich saturated colour in costumes and environments — deep green, gold, royal purple, "
+        "crimson, desaturated earth tones on everything else, shallow depth of field on magical "
+        "elements with bokeh, wide establishing shots of impossible architecture, mist and "
+        "particles in every light beam, skin lit warm against cool environment, the scale "
+        "of myth."
+    ),
+
+    "Comedy": (
+        "Comedy aesthetic: bright even lighting with minimal shadow, warm approachable colour "
+        "palette, medium shot framing that shows full body language and facial expression, "
+        "clean sharp focus across the frame, the camera positioned at human eye-height as a "
+        "neutral observer, occasional push-in for reaction shots, practical bright interiors, "
+        "the visual clarity needed for physical comedy and timing, no visual tricks competing "
+        "with performance."
+    ),
+
+    "Drama": (
+        "Drama aesthetic: naturalistic motivated lighting from windows and practicals, warm "
+        "skin tones with careful attention to under-eye shadow and emotional texture on faces, "
+        "slow deliberate camera movement — push-in during confession, pull-back during isolation, "
+        "shallow depth of field on close-ups, muted earth-tone palette with desaturated "
+        "backgrounds, the camera at the exact distance where intimacy meets observation, "
+        "negative space in the frame reflecting emotional distance between characters, "
+        "the visual weight of silence."
+    ),
 }
 
 
@@ -2139,32 +2894,41 @@ def build_user_message(instruction, system_prompt, target_model,
 # ════���════════════════════════���════════════════════════════════════════════
 #  OUTPUT CLEANER — standalone function adapted from _clean_output()
 # ════════════════════════════��═════════════════════════════════════════════
-def clean_llm_output(text: str, screenplay_mode: bool = False) -> str:
-    """Clean raw LLM output into a usable prompt.
+def clean_llm_output(text: str, screenplay_mode: bool = False) -> tuple:
+    """Clean raw LLM output into a usable prompt and optional negative prompt.
 
-    Strips POSITIVE/NEGATIVE labels, markdown fences, plan/summary detection,
-    junk pattern filtering, and quote stripping.
+    Extracts POSITIVE/NEGATIVE sections (for image models), strips markdown fences,
+    plan/summary detection, junk pattern filtering, and quote stripping.
 
     Args:
         text: Raw LLM output string.
         screenplay_mode: If True, skip plan detector (structured blocks are intentional).
 
     Returns:
-        Cleaned prompt string, or a warning message if the output was a plan/summary.
+        Tuple of (positive_prompt, negative_prompt). Negative is empty string
+        for video models or when the LLM didn't produce a NEGATIVE: section.
     """
     if text.startswith("❌") or text.startswith("⚠️"):
-        return text
+        return (text, "")
 
-    # Strip POSITIVE: label and everything from NEGATIVE: onward.
-    # Image models (SDXL, Pony, SD1.5) output both blocks — we only want
-    # the positive tags in the prompt wire. Negatives belong in the
-    # KSampler's negative conditioning, not mixed into the positive string.
-    # Broad pattern handles any whitespace variation (blank lines, spaces, etc.)
-    if re.search(r"(?i)positive\s*:", text):
-        text = re.sub(r"(?i)^\s*positive\s*:\s*", "", text, flags=re.MULTILINE)
+    # Extract negative prompt BEFORE stripping it.
+    # Image models (SDXL, Pony, SD1.5) output POSITIVE: and NEGATIVE: blocks.
+    negative_prompt = ""
     neg_match = re.search(r"(?i)\s*negative\s*:", text)
     if neg_match:
+        raw_negative = text[neg_match.end():].strip()
+        # Clean the negative: strip label artifacts, whitespace, trailing junk
+        raw_negative = re.sub(r"(?i)^\s*negative\s*:\s*", "", raw_negative).strip()
+        # Remove markdown fences from negative if present
+        if "```" in raw_negative:
+            raw_negative = re.sub(r"```\w*\n?", "", raw_negative).strip()
+        negative_prompt = raw_negative.strip().rstrip('"').rstrip("'").strip()
+        # Trim the main text to just the positive part
         text = text[:neg_match.start()]
+
+    # Strip POSITIVE: label if present
+    if re.search(r"(?i)positive\s*:", text):
+        text = re.sub(r"(?i)^\s*positive\s*:\s*", "", text, flags=re.MULTILINE)
 
     # Strip markdown fences
     if "```" in text:
@@ -2266,4 +3030,4 @@ def clean_llm_output(text: str, screenplay_mode: bool = False) -> str:
     if len(text) > 2 and text[0] in ('"', "'") and text[-1] == text[0]:
         text = text[1:-1].strip()
 
-    return text
+    return (text, negative_prompt)

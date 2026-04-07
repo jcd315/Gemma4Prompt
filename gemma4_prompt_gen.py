@@ -24,6 +24,8 @@ from .system_prompts import (
     TARGET_MODELS,
     ENVIRONMENT_PRESETS,
     ANIMATION_PRESETS,
+    DIRECTOR_PRESETS,
+    GENRE_PRESETS,
     get_system_prompt,
     is_video_model,
     has_audio,
@@ -49,6 +51,8 @@ class Gemma4PromptGen:
     def INPUT_TYPES(cls):
         env_keys = list(ENVIRONMENT_PRESETS.keys())
         anim_keys = list(ANIMATION_PRESETS.keys())
+        director_keys = list(DIRECTOR_PRESETS.keys())
+        genre_keys = list(GENRE_PRESETS.keys())
         return {
             "required": {
                 "target_model": (
@@ -90,6 +94,26 @@ class Gemma4PromptGen:
                         "tooltip": (
                             "Animation preset — pre-loads character names, locations, and tone "
                             "from iconic cartoons. Select a show then describe your scene using character names."
+                        ),
+                    },
+                ),
+                "director_style": (
+                    director_keys,
+                    {
+                        "default": "None",
+                        "tooltip": (
+                            "Director visual style — injects camera vocabulary, color palette, "
+                            "and composition rules inspired by iconic filmmakers."
+                        ),
+                    },
+                ),
+                "genre": (
+                    genre_keys,
+                    {
+                        "default": "None",
+                        "tooltip": (
+                            "Genre preset — shapes lighting vocabulary, pacing cues, "
+                            "and tonal language for the chosen genre."
                         ),
                     },
                 ),
@@ -226,11 +250,22 @@ class Gemma4PromptGen:
                         "tooltip": "Clear ComfyUI models from VRAM before calling LM Studio.",
                     },
                 ),
+                "custom_system_prompt": (
+                    "STRING",
+                    {
+                        "multiline": True,
+                        "default": "",
+                        "tooltip": (
+                            "Advanced: completely replace the target model's system prompt "
+                            "with your own. Leave empty to use the built-in prompt."
+                        ),
+                    },
+                ),
             },
         }
 
-    RETURN_TYPES = ("STRING",)
-    RETURN_NAMES = ("prompt",)
+    RETURN_TYPES = ("STRING", "STRING",)
+    RETURN_NAMES = ("prompt", "negative_prompt",)
     FUNCTION = "execute"
     CATEGORY = "LoRa-Daddy/Gemma4"
     OUTPUT_NODE = True
@@ -247,8 +282,10 @@ class Gemma4PromptGen:
         lm_studio_url,
         environment,
         animation_preset,
-        dialogue,
-        use_image,
+        director_style="None",
+        genre="None",
+        dialogue=False,
+        use_image=False,
         screenplay_mode=False,
         image=None,
         character="",
@@ -262,11 +299,27 @@ class Gemma4PromptGen:
         pov_mode="Off",
         seed=0,
         flush_comfyui_vram=True,
+        custom_system_prompt="",
     ):
         t0 = time.time()
 
         # ── 1. Build system prompt ───────────────────────────────────────
-        system_prompt = get_system_prompt(target_model, screenplay_mode, animation_preset)
+        if custom_system_prompt and custom_system_prompt.strip():
+            system_prompt = custom_system_prompt.strip()
+        else:
+            system_prompt = get_system_prompt(target_model, screenplay_mode, animation_preset)
+
+        # Inject director style
+        if director_style and director_style != "None":
+            director_data = DIRECTOR_PRESETS.get(director_style)
+            if director_data:
+                system_prompt += f"\n\nDIRECTOR VISUAL STYLE — {director_style}:\n{director_data}"
+
+        # Inject genre
+        if genre and genre != "None":
+            genre_data = GENRE_PRESETS.get(genre)
+            if genre_data:
+                system_prompt += f"\n\nGENRE — {genre}:\n{genre_data}"
 
         # ── 2. Prepare image ─────────────────────────────────────────────
         image_base64 = None
@@ -287,6 +340,8 @@ class Gemma4PromptGen:
             max_tokens=str(max_tokens),
             environment=environment,
             animation_preset=animation_preset,
+            director_style=director_style,
+            genre=genre,
             dialogue=str(dialogue),
             pov_mode=pov_mode,
             character=character,
@@ -296,14 +351,15 @@ class Gemma4PromptGen:
 
         cached = cache.check(input_hash)
         if cached is not None:
+            cached_prompt, cached_neg = cached
             elapsed = time.time() - t0
             print(f"\n{'='*60}")
             print(f"GEMMA4 PROMPT GEN — {target_model}")
             print(f"Cache hit — prompt unchanged, skipping LLM ({elapsed:.1f}s)")
             print(f"{'='*60}")
-            print(cached[:600] + ("..." if len(cached) > 600 else ""))
+            print(cached_prompt[:600] + ("..." if len(cached_prompt) > 600 else ""))
             print(f"{'='*60}\n")
-            return {"ui": {"text": [cached]}, "result": (cached,)}
+            return {"ui": {"text": [cached_prompt]}, "result": (cached_prompt, cached_neg)}
 
         # ── 4. Check LM Studio is running ────────────────────────────────
         if not lms.is_server_running(lm_studio_url):
@@ -431,14 +487,14 @@ class Gemma4PromptGen:
                     lms.unload_model(effective_model, lm_studio_url)
                 except Exception:
                     pass
-            return (f"Error during generation: {e}",)
+            return {"ui": {"text": ["Error"]}, "result": (f"Error during generation: {e}", "")}
 
         # Strip residual thinking tags
         raw = re.sub(r'<\|channel>thought\n.*?<channel\|>', '', raw, flags=re.DOTALL)
 
         # ── 9. Clean output ──────────────────────────────────────────────
         is_screenplay = screenplay_mode and "LTX" in target_model
-        cleaned = clean_llm_output(raw.strip(), screenplay_mode=is_screenplay)
+        cleaned, negative = clean_llm_output(raw.strip(), screenplay_mode=is_screenplay)
 
         # ── 10. Unload model ─────────────────────────────────────────────
         # Unload if: (a) we loaded it ourselves, or (b) user wants unload in bypass mode
@@ -452,7 +508,7 @@ class Gemma4PromptGen:
 
         # ── 11. Cache result ─────────────────────────────────────────────
         if not cleaned.startswith("Error") and not cleaned.startswith("⚠️"):
-            cache.store(input_hash, cleaned)
+            cache.store(input_hash, (cleaned, negative))
 
         elapsed = time.time() - t0
         print(f"\n{'='*60}")
@@ -460,9 +516,11 @@ class Gemma4PromptGen:
         print(f"Generated in {elapsed:.1f}s via {effective_model}")
         print(f"{'='*60}")
         print(cleaned[:600] + ("..." if len(cleaned) > 600 else ""))
+        if negative:
+            print(f"NEGATIVE: {negative[:200]}")
         print(f"{'='*60}\n")
 
-        return {"ui": {"text": [cleaned]}, "result": (cleaned,)}
+        return {"ui": {"text": [cleaned]}, "result": (cleaned, negative)}
 
 
 # ── ComfyUI Registration ────────────────────────────────────────────────
