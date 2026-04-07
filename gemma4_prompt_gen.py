@@ -144,7 +144,7 @@ class Gemma4PromptGen:
                 "model_name": (
                     "STRING",
                     {
-                        "default": "gemma-4-31b-it-uncensored-heretic",
+                        "default": "",
                         "tooltip": (
                             "LM Studio model identifier. "
                             "Leave empty to use whatever is loaded."
@@ -253,7 +253,7 @@ class Gemma4PromptGen:
         image=None,
         character="",
         frame_count=257,
-        model_name="gemma-4-31b-it-uncensored-heretic",
+        model_name="",
         skip_load_unload=False,
         unload_model_after=False,
         context_length=14336,
